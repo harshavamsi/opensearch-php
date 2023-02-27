@@ -1,0 +1,490 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Class OpenSearch\Transport |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-OpenSearch.html">OpenSearch</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Common.html">Common</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.ConnectionPool.html">ConnectionPool</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Connections.html">Connections</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.html">Endpoints</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Handlers.html">Handlers</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Helper.html">Helper</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Namespaces.html">Namespaces</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Serializers.html">Serializers</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="OpenSearch.Client.html">
+							Client
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.ClientBuilder.html">
+							ClientBuilder
+						</a>
+					</li>
+					<li class="active">
+						<a href="OpenSearch.Transport.html">
+							Transport
+						</a>
+					</li>
+			</ul>
+		</div>
+
+
+
+
+
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-OpenSearch.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="OpenSearch.Transport.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-OpenSearch.html">OpenSearch</a>\<a href="OpenSearch.Transport.html">Transport</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-OpenSearch.Transport.html#31" title="Go to source code">OpenSearch/Transport.php</a><br>
+		</div>
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Transport.html#58-77" title="Go to source code">__construct</a>(<span>int <var>$retries</var></span>, <span><a href="OpenSearch.ConnectionPool.AbstractConnectionPool.html"><span title="OpenSearch\ConnectionPool\AbstractConnectionPool">AbstractConnectionPool</span></a> <var>$connectionPool</var></span>, <span><a href="Psr.Log.LoggerInterface.html"><span title="Psr\Log\LoggerInterface">LoggerInterface</span></a> <var>$log</var></span>, <span>bool <var>$sniffOnStart</var> = <span class="php-kw">false</span></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Transport class is responsible for dispatching requests to the
+underlying cluster connections
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Transport class is responsible for dispatching requests to the
+underlying cluster connections</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$log</var>&nbsp;&nbsp;</td>
+										<td><p>Monolog logger object</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getConnection" id="_getConnection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Transport.html#79-86" title="Go to source code">getConnection</a>(): <a href="OpenSearch.Connections.ConnectionInterface.html"><span title="OpenSearch\Connections\ConnectionInterface">ConnectionInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a single connection from the connection pool
+Potentially performs a sniffing step before returning
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a single connection from the connection pool
+Potentially performs a sniffing step before returning</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getConnection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="performRequest" id="_performRequest">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Transport.html#88-139" title="Go to source code">performRequest</a>(
+	<span>string <var>$method</var></span>,
+	<span>string <var>$uri</var></span>,
+	<span>array <var>$params</var> = []</span>,
+	<span>mixed|null <var>$body</var> = <span class="php-kw">null</span></span>,
+	<span>array <var>$options</var> = []</span>,
+): <a href="GuzzleHttp.Ring.Future.FutureArrayInterface.html"><span title="GuzzleHttp\Ring\Future\FutureArrayInterface">FutureArrayInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Perform a request to the Cluster
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Perform a request to the Cluster</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$method</var>&nbsp;&nbsp;</td>
+										<td><p>HTTP method to use</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$uri</var>&nbsp;&nbsp;</td>
+										<td><p>HTTP URI to send request to</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Optional query parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$body</var>&nbsp;&nbsp;</td>
+										<td><p>Optional query body</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="OpenSearch.Common.Exceptions.NoNodesAvailableException.html"><span>OpenSearch\Common\Exceptions\NoNodesAvailableException</span></a>|<a href="Exception.html"><span>Exception</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_performRequest">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resultOrFuture" id="_resultOrFuture">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Transport.html#141-157" title="Go to source code">resultOrFuture</a>(<span><a href="GuzzleHttp.Ring.Future.FutureArrayInterface.html"><span title="GuzzleHttp\Ring\Future\FutureArrayInterface">FutureArrayInterface</span></a> <var>$result</var></span>, <span>array <var>$options</var> = []</span>): callable|array</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$result</var>&nbsp;&nbsp;</td>
+										<td><p>Response of a request (promise)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$options</var>&nbsp;&nbsp;</td>
+										<td><p>Options for transport</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resultOrFuture">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="shouldRetry" id="_shouldRetry">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Transport.html#159-168" title="Go to source code">shouldRetry</a>(<span>array <var>$request</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_shouldRetry">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getLastConnection" id="_getLastConnection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Transport.html#170-177" title="Go to source code">getLastConnection</a>(): <a href="OpenSearch.Connections.ConnectionInterface.html"><span title="OpenSearch\Connections\ConnectionInterface">ConnectionInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the last used connection so that it may be inspected.  Mainly
+for debugging/testing purposes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the last used connection so that it may be inspected.  Mainly
+for debugging/testing purposes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getLastConnection">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="connectionPool" id="$connectionPool">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.ConnectionPool.AbstractConnectionPool.html"><span title="OpenSearch\ConnectionPool\AbstractConnectionPool">AbstractConnectionPool</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Transport.html#33-36" title="Go to source code">$connectionPool</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$connectionPool">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="retryAttempts" id="$retryAttempts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Transport.html#43-46" title="Go to source code">$retryAttempts</a></var> = <span class="php-num">0</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$retryAttempts">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="lastConnection" id="$lastConnection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Connections.ConnectionInterface.html"><span title="OpenSearch\Connections\ConnectionInterface">ConnectionInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Transport.html#48-51" title="Go to source code">$lastConnection</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$lastConnection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="retries" id="$retries">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Transport.html#53-56" title="Go to source code">$retries</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$retries">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.3</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

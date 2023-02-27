@@ -1,0 +1,1074 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Class OpenSearch\Connections\Connection |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-OpenSearch.html">OpenSearch</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Common.html">Common</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.ConnectionPool.html">ConnectionPool</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-OpenSearch.Connections.html">Connections</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.html">Endpoints</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Handlers.html">Handlers</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Helper.html">Helper</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Namespaces.html">Namespaces</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Serializers.html">Serializers</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="OpenSearch.Connections.Connection.html">
+							Connection
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Connections.ConnectionFactory.html">
+							ConnectionFactory
+						</a>
+					</li>
+			</ul>
+		</div>
+
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="OpenSearch.Connections.ConnectionFactoryInterface.html">
+							ConnectionFactoryInterface
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Connections.ConnectionInterface.html">
+							ConnectionInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+
+
+
+
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-OpenSearch.Connections.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="OpenSearch.Connections.Connection.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-OpenSearch.html">OpenSearch</a>\<a href="namespace-OpenSearch.Connections.html">Connections</a>\<a href="OpenSearch.Connections.Connection.html">Connection</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="OpenSearch.Connections.ConnectionInterface.html"><span title="OpenSearch\Connections\ConnectionInterface">ConnectionInterface</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-OpenSearch.Connections.Connection.html#50" title="Go to source code">OpenSearch/Connections/Connection.php</a><br>
+		</div>
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#132-190" title="Go to source code">__construct</a>(
+	<span>callable <var>$handler</var></span>,
+	<span>array <var>$hostDetails</var></span>,
+	<span>array <var>$connectionParams</var></span>,
+	<span><a href="OpenSearch.Serializers.SerializerInterface.html"><span title="OpenSearch\Serializers\SerializerInterface">SerializerInterface</span></a> <var>$serializer</var></span>,
+	<span><a href="Psr.Log.LoggerInterface.html"><span title="Psr\Log\LoggerInterface">LoggerInterface</span></a> <var>$log</var></span>,
+	<span><a href="Psr.Log.LoggerInterface.html"><span title="Psr\Log\LoggerInterface">LoggerInterface</span></a> <var>$trace</var></span>,
+)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="performRequest" id="_performRequest">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#192-241" title="Go to source code">performRequest</a>(
+	<span>string <var>$method</var></span>,
+	<span>string <var>$uri</var></span>,
+	<span>null|array <var>$params</var> = []</span>,
+	<span>null|mixed <var>$body</var> = <span class="php-kw">null</span></span>,
+	<span>array <var>$options</var> = []</span>,
+	<span><a href="OpenSearch.Transport.html"><span title="OpenSearch\Transport">Transport</span></a> <var>$transport</var> = <span class="php-kw">null</span></span>,
+): mixed</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="OpenSearch.Connections.ConnectionInterface.html#_performRequest">						<code>OpenSearch\Connections\ConnectionInterface::performRequest()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_performRequest">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTransportSchema" id="_getTransportSchema">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#243-246" title="Go to source code">getTransportSchema</a>(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the transport schema for this connection
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the transport schema for this connection</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="OpenSearch.Connections.ConnectionInterface.html#_getTransportSchema">						<code>OpenSearch\Connections\ConnectionInterface::getTransportSchema()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTransportSchema">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getLastRequestInfo" id="_getLastRequestInfo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#248-251" title="Go to source code">getLastRequestInfo</a>(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Return an associative array of information about the last request
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return an associative array of information about the last request</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="OpenSearch.Connections.ConnectionInterface.html#_getLastRequestInfo">						<code>OpenSearch\Connections\ConnectionInterface::getLastRequestInfo()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getLastRequestInfo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHeaders" id="_getHeaders">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#373-376" title="Go to source code">getHeaders</a>(): array</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHeaders">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="logWarning" id="_logWarning">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#378-381" title="Go to source code">logWarning</a>(<span>array <var>$request</var></span>, <span>array <var>$response</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_logWarning">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="logRequestSuccess" id="_logRequestSuccess">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#383-423" title="Go to source code">logRequestSuccess</a>(<span>array <var>$request</var></span>, <span>array <var>$response</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Log a successful request
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Log a successful request</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_logRequestSuccess">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="logRequestFail" id="_logRequestFail">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#425-468" title="Go to source code">logRequestFail</a>(<span>array <var>$request</var></span>, <span>array <var>$response</var></span>, <span><a href="Throwable.html"><span title="Throwable">Throwable</span></a> <var>$exception</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Log a failed request
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Log a failed request</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_logRequestFail">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ping" id="_ping">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#470-497" title="Go to source code">ping</a>(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ping">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sniff" id="_sniff">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#499-512" title="Go to source code">sniff</a>(): array|<a href="GuzzleHttp.Ring.Future.FutureArray.html"><span title="GuzzleHttp\Ring\Future\FutureArray">FutureArray</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sniff">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isAlive" id="_isAlive">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#514-517" title="Go to source code">isAlive</a>(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Check to see if this instance is marked as 'alive'
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Check to see if this instance is marked as 'alive'</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="OpenSearch.Connections.ConnectionInterface.html#_isAlive">						<code>OpenSearch\Connections\ConnectionInterface::isAlive()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isAlive">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="markAlive" id="_markAlive">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#519-524" title="Go to source code">markAlive</a>(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Mark this instance as 'alive'
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Mark this instance as 'alive'</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="OpenSearch.Connections.ConnectionInterface.html#_markAlive">						<code>OpenSearch\Connections\ConnectionInterface::markAlive()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_markAlive">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="markDead" id="_markDead">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#526-531" title="Go to source code">markDead</a>(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Mark this instance as 'dead'
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Mark this instance as 'dead'</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="OpenSearch.Connections.ConnectionInterface.html#_markDead">						<code>OpenSearch\Connections\ConnectionInterface::markDead()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_markDead">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getLastPing" id="_getLastPing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#533-536" title="Go to source code">getLastPing</a>(): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getLastPing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPingFailures" id="_getPingFailures">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#538-541" title="Go to source code">getPingFailures</a>(): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPingFailures">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHost" id="_getHost">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#543-546" title="Go to source code">getHost</a>(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the hostname for this connection
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the hostname for this connection</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="OpenSearch.Connections.ConnectionInterface.html#_getHost">						<code>OpenSearch\Connections\ConnectionInterface::getHost()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHost">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUserPass" id="_getUserPass">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#548-551" title="Go to source code">getUserPass</a>(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the username:password string for this connection, null if not set
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the username:password string for this connection, null if not set</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="OpenSearch.Connections.ConnectionInterface.html#_getUserPass">						<code>OpenSearch\Connections\ConnectionInterface::getUserPass()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUserPass">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPath" id="_getPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#553-556" title="Go to source code">getPath</a>(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the URL path suffix, null if not set
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the URL path suffix, null if not set</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="OpenSearch.Connections.ConnectionInterface.html#_getPath">						<code>OpenSearch\Connections\ConnectionInterface::getPath()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPort" id="_getPort">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#558-564" title="Go to source code">getPort</a>(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the port for this connection
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the port for this connection</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="OpenSearch.Connections.ConnectionInterface.html#_getPort">						<code>OpenSearch\Connections\ConnectionInterface::getPort()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPort">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCurlRetryException" id="_getCurlRetryException">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Connections.Connection.html#566-584" title="Go to source code">getCurlRetryException</a>(<span>array <var>$request</var></span>, <span>array <var>$response</var></span>): <a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCurlRetryException">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="handler" id="$handler">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">callable</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Connections.Connection.html#52-55" title="Go to source code">$handler</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$handler">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="serializer" id="$serializer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Serializers.SerializerInterface.html"><span title="OpenSearch\Serializers\SerializerInterface">SerializerInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Connections.Connection.html#57-60" title="Go to source code">$serializer</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$serializer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="transportSchema" id="$transportSchema">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Connections.Connection.html#62-65" title="Go to source code">$transportSchema</a></var> = <span class="php-str">'http'</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$transportSchema">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="host" id="$host">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Connections.Connection.html#65-70" title="Go to source code">$host</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$host">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="path" id="$path">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Connections.Connection.html#72-75" title="Go to source code">$path</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$path">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="port" id="$port">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Connections.Connection.html#77-80" title="Go to source code">$port</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$port">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="log" id="$log">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Psr.Log.LoggerInterface.html"><span title="Psr\Log\LoggerInterface">LoggerInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Connections.Connection.html#82-85" title="Go to source code">$log</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$log">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="trace" id="$trace">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Psr.Log.LoggerInterface.html"><span title="Psr\Log\LoggerInterface">LoggerInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Connections.Connection.html#87-90" title="Go to source code">$trace</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$trace">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="connectionParams" id="$connectionParams">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Connections.Connection.html#92-95" title="Go to source code">$connectionParams</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$connectionParams">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="headers" id="$headers">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Connections.Connection.html#97-100" title="Go to source code">$headers</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$headers">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isAlive" id="$isAlive">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Connections.Connection.html#102-105" title="Go to source code">$isAlive</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$isAlive">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.3</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,1765 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Tree |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.html">OpenSearch</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Common.html">Common</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.ConnectionPool.html">ConnectionPool</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Connections.html">Connections</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.html">Endpoints</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Handlers.html">Handlers</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Helper.html">Helper</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Namespaces.html">Namespaces</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Serializers.html">Serializers</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					<span>
+						Namespace
+					</span>
+				</li>
+<li><span>Class</span></li>				<li class="active">
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>Tree</h1>
+
+			<h3>Classes</h3>
+	<ul class="classTree">
+	<li>
+<a href="Exception.html"><span>Exception</span></a>
+
+		implements
+			<a href="Throwable.html"><span title="Throwable">Throwable</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="LogicException.html"><span>LogicException</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="BadMethodCallException.html"><span>BadMethodCallException</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="OpenSearch.Common.Exceptions.BadMethodCallException.html"><span>OpenSearch\Common\Exceptions\BadMethodCallException</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="OpenSearch.Common.Exceptions.InvalidArgumentException.html"><span>OpenSearch\Common\Exceptions\InvalidArgumentException</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	<li>
+<a href="Psr.Log.InvalidArgumentException.html"><span>Psr\Log\InvalidArgumentException</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="OpenSearch.Common.Exceptions.BadRequest400Exception.html"><span>OpenSearch\Common\Exceptions\BadRequest400Exception</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="OpenSearch.Common.Exceptions.RequestTimeout408Exception.html"><span>OpenSearch\Common\Exceptions\RequestTimeout408Exception</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Common.Exceptions.ScriptLangNotSupportedException.html"><span>OpenSearch\Common\Exceptions\ScriptLangNotSupportedException</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="OpenSearch.Common.Exceptions.Conflict409Exception.html"><span>OpenSearch\Common\Exceptions\Conflict409Exception</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Common.Exceptions.Forbidden403Exception.html"><span>OpenSearch\Common\Exceptions\Forbidden403Exception</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Common.Exceptions.Missing404Exception.html"><span>OpenSearch\Common\Exceptions\Missing404Exception</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Common.Exceptions.Serializer.JsonErrorException.html"><span>OpenSearch\Common\Exceptions\Serializer\JsonErrorException</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Common.Exceptions.TransportException.html"><span>OpenSearch\Common\Exceptions\TransportException</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="OpenSearch.Common.Exceptions.ClientErrorResponseException.html"><span>OpenSearch\Common\Exceptions\ClientErrorResponseException</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Common.Exceptions.Curl.CouldNotConnectToHost.html"><span>OpenSearch\Common\Exceptions\Curl\CouldNotConnectToHost</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Common.Exceptions.Curl.CouldNotResolveHostException.html"><span>OpenSearch\Common\Exceptions\Curl\CouldNotResolveHostException</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Common.Exceptions.Curl.OperationTimeoutException.html"><span>OpenSearch\Common\Exceptions\Curl\OperationTimeoutException</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Common.Exceptions.MaxRetriesException.html"><span>OpenSearch\Common\Exceptions\MaxRetriesException</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Common.Exceptions.ServerErrorResponseException.html"><span>OpenSearch\Common\Exceptions\ServerErrorResponseException</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="OpenSearch.Common.Exceptions.NoDocumentsToGetException.html"><span>OpenSearch\Common\Exceptions\NoDocumentsToGetException</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Common.Exceptions.NoNodesAvailableException.html"><span>OpenSearch\Common\Exceptions\NoNodesAvailableException</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Common.Exceptions.NoShardAvailableException.html"><span>OpenSearch\Common\Exceptions\NoShardAvailableException</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Common.Exceptions.RoutingMissingException.html"><span>OpenSearch\Common\Exceptions\RoutingMissingException</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="OpenSearch.Common.Exceptions.Unauthorized401Exception.html"><span>OpenSearch\Common\Exceptions\Unauthorized401Exception</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	<li>
+<a href="RuntimeException.html"><span>RuntimeException</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="OpenSearch.Common.Exceptions.AuthenticationConfigException.html"><span>OpenSearch\Common\Exceptions\AuthenticationConfigException</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Common.Exceptions.RuntimeException.html"><span>OpenSearch\Common\Exceptions\RuntimeException</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	<li>
+<a href="UnexpectedValueException.html"><span>UnexpectedValueException</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="OpenSearch.Common.Exceptions.UnexpectedValueException.html"><span>OpenSearch\Common\Exceptions\UnexpectedValueException</span></a>
+
+		implements
+			<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span title="OpenSearch\Common\Exceptions\OpenSearchException">OpenSearchException</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="GuzzleHttp.Ring.Client.CurlHandler.html"><span>GuzzleHttp\Ring\Client\CurlHandler</span></a>
+
+
+	</li>
+	<li>
+<a href="GuzzleHttp.Ring.Client.CurlMultiHandler.html"><span>GuzzleHttp\Ring\Client\CurlMultiHandler</span></a>
+
+
+	</li>
+	<li>
+<a href="GuzzleHttp.Ring.Future.CompletedFutureValue.html"><span>GuzzleHttp\Ring\Future\CompletedFutureValue</span></a>
+
+		implements
+			<a href="GuzzleHttp.Ring.Future.FutureInterface.html"><span title="GuzzleHttp\Ring\Future\FutureInterface">FutureInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="GuzzleHttp.Ring.Future.CompletedFutureArray.html"><span>GuzzleHttp\Ring\Future\CompletedFutureArray</span></a>
+
+		implements
+			<a href="GuzzleHttp.Ring.Future.FutureArrayInterface.html"><span title="GuzzleHttp\Ring\Future\FutureArrayInterface">FutureArrayInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="GuzzleHttp.Ring.Future.FutureArray.html"><span>GuzzleHttp\Ring\Future\FutureArray</span></a>
+
+		implements
+			<a href="GuzzleHttp.Ring.Future.FutureArrayInterface.html"><span title="GuzzleHttp\Ring\Future\FutureArrayInterface">FutureArrayInterface</span></a>
+
+		uses
+			<a href="GuzzleHttp.Ring.Future.MagicFutureTrait.html"><span title="GuzzleHttp\Ring\Future\MagicFutureTrait">MagicFutureTrait</span></a>
+	</li>
+	<li>
+<a href="OpenSearch.Client.html"><span>OpenSearch\Client</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.ClientBuilder.html"><span>OpenSearch\ClientBuilder</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.ConnectionPool.AbstractConnectionPool.html"><span>OpenSearch\ConnectionPool\AbstractConnectionPool</span></a>
+
+		implements
+			<a href="OpenSearch.ConnectionPool.ConnectionPoolInterface.html"><span title="OpenSearch\ConnectionPool\ConnectionPoolInterface">ConnectionPoolInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="OpenSearch.ConnectionPool.SimpleConnectionPool.html"><span>OpenSearch\ConnectionPool\SimpleConnectionPool</span></a>
+
+		implements
+			<a href="OpenSearch.ConnectionPool.ConnectionPoolInterface.html"><span title="OpenSearch\ConnectionPool\ConnectionPoolInterface">ConnectionPoolInterface</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.ConnectionPool.SniffingConnectionPool.html"><span>OpenSearch\ConnectionPool\SniffingConnectionPool</span></a>
+
+		implements
+			<a href="OpenSearch.ConnectionPool.ConnectionPoolInterface.html"><span title="OpenSearch\ConnectionPool\ConnectionPoolInterface">ConnectionPoolInterface</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.ConnectionPool.StaticConnectionPool.html"><span>OpenSearch\ConnectionPool\StaticConnectionPool</span></a>
+
+		implements
+			<a href="OpenSearch.ConnectionPool.ConnectionPoolInterface.html"><span title="OpenSearch\ConnectionPool\ConnectionPoolInterface">ConnectionPoolInterface</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.ConnectionPool.StaticNoPingConnectionPool.html"><span>OpenSearch\ConnectionPool\StaticNoPingConnectionPool</span></a>
+
+		implements
+			<a href="OpenSearch.ConnectionPool.ConnectionPoolInterface.html"><span title="OpenSearch\ConnectionPool\ConnectionPoolInterface">ConnectionPoolInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="OpenSearch.ConnectionPool.Selectors.RandomSelector.html"><span>OpenSearch\ConnectionPool\Selectors\RandomSelector</span></a>
+
+		implements
+			<a href="OpenSearch.ConnectionPool.Selectors.SelectorInterface.html"><span title="OpenSearch\ConnectionPool\Selectors\SelectorInterface">SelectorInterface</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.ConnectionPool.Selectors.RoundRobinSelector.html"><span>OpenSearch\ConnectionPool\Selectors\RoundRobinSelector</span></a>
+
+		implements
+			<a href="OpenSearch.ConnectionPool.Selectors.SelectorInterface.html"><span title="OpenSearch\ConnectionPool\Selectors\SelectorInterface">SelectorInterface</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.ConnectionPool.Selectors.StickyRoundRobinSelector.html"><span>OpenSearch\ConnectionPool\Selectors\StickyRoundRobinSelector</span></a>
+
+		implements
+			<a href="OpenSearch.ConnectionPool.Selectors.SelectorInterface.html"><span title="OpenSearch\ConnectionPool\Selectors\SelectorInterface">SelectorInterface</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Connections.Connection.html"><span>OpenSearch\Connections\Connection</span></a>
+
+		implements
+			<a href="OpenSearch.Connections.ConnectionInterface.html"><span title="OpenSearch\Connections\ConnectionInterface">ConnectionInterface</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Connections.ConnectionFactory.html"><span>OpenSearch\Connections\ConnectionFactory</span></a>
+
+		implements
+			<a href="OpenSearch.Connections.ConnectionFactoryInterface.html"><span title="OpenSearch\Connections\ConnectionFactoryInterface">ConnectionFactoryInterface</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.AbstractEndpoint.html"><span>OpenSearch\Endpoints\AbstractEndpoint</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="OpenSearch.Endpoints.AsyncSearch.Delete.html"><span>OpenSearch\Endpoints\AsyncSearch\Delete</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.AsyncSearch.Get.html"><span>OpenSearch\Endpoints\AsyncSearch\Get</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.AsyncSearch.Submit.html"><span>OpenSearch\Endpoints\AsyncSearch\Submit</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Bulk.html"><span>OpenSearch\Endpoints\Bulk</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Aliases.html"><span>OpenSearch\Endpoints\Cat\Aliases</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Allocation.html"><span>OpenSearch\Endpoints\Cat\Allocation</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.ClusterManager.html"><span>OpenSearch\Endpoints\Cat\ClusterManager</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Count.html"><span>OpenSearch\Endpoints\Cat\Count</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Fielddata.html"><span>OpenSearch\Endpoints\Cat\Fielddata</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Health.html"><span>OpenSearch\Endpoints\Cat\Health</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Help.html"><span>OpenSearch\Endpoints\Cat\Help</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Indices.html"><span>OpenSearch\Endpoints\Cat\Indices</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Master.html"><span class="deprecated">OpenSearch\Endpoints\Cat\Master</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.NodeAttrs.html"><span>OpenSearch\Endpoints\Cat\NodeAttrs</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Nodes.html"><span>OpenSearch\Endpoints\Cat\Nodes</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.PendingTasks.html"><span>OpenSearch\Endpoints\Cat\PendingTasks</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Plugins.html"><span>OpenSearch\Endpoints\Cat\Plugins</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Recovery.html"><span>OpenSearch\Endpoints\Cat\Recovery</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Repositories.html"><span>OpenSearch\Endpoints\Cat\Repositories</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Segments.html"><span>OpenSearch\Endpoints\Cat\Segments</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Shards.html"><span>OpenSearch\Endpoints\Cat\Shards</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Snapshots.html"><span>OpenSearch\Endpoints\Cat\Snapshots</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Tasks.html"><span>OpenSearch\Endpoints\Cat\Tasks</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Templates.html"><span>OpenSearch\Endpoints\Cat\Templates</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.ThreadPool.html"><span>OpenSearch\Endpoints\Cat\ThreadPool</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Transforms.html"><span>OpenSearch\Endpoints\Cat\Transforms</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.ClearScroll.html"><span>OpenSearch\Endpoints\ClearScroll</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.ClosePointInTime.html"><span>OpenSearch\Endpoints\ClosePointInTime</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.AllocationExplain.html"><span>OpenSearch\Endpoints\Cluster\AllocationExplain</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.DeleteComponentTemplate.html"><span>OpenSearch\Endpoints\Cluster\DeleteComponentTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.DeleteVotingConfigExclusions.html"><span>OpenSearch\Endpoints\Cluster\DeleteVotingConfigExclusions</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.ExistsComponentTemplate.html"><span>OpenSearch\Endpoints\Cluster\ExistsComponentTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.GetComponentTemplate.html"><span>OpenSearch\Endpoints\Cluster\GetComponentTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.GetSettings.html"><span>OpenSearch\Endpoints\Cluster\GetSettings</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.Health.html"><span>OpenSearch\Endpoints\Cluster\Health</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.PendingTasks.html"><span>OpenSearch\Endpoints\Cluster\PendingTasks</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.PostVotingConfigExclusions.html"><span>OpenSearch\Endpoints\Cluster\PostVotingConfigExclusions</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.PutComponentTemplate.html"><span>OpenSearch\Endpoints\Cluster\PutComponentTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.PutSettings.html"><span>OpenSearch\Endpoints\Cluster\PutSettings</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.RemoteInfo.html"><span>OpenSearch\Endpoints\Cluster\RemoteInfo</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.Reroute.html"><span>OpenSearch\Endpoints\Cluster\Reroute</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.State.html"><span>OpenSearch\Endpoints\Cluster\State</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.Stats.html"><span>OpenSearch\Endpoints\Cluster\Stats</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Count.html"><span>OpenSearch\Endpoints\Count</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Create.html"><span>OpenSearch\Endpoints\Create</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DanglingIndices.DeleteDanglingIndex.html"><span>OpenSearch\Endpoints\DanglingIndices\DeleteDanglingIndex</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DanglingIndices.ImportDanglingIndex.html"><span>OpenSearch\Endpoints\DanglingIndices\ImportDanglingIndex</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DanglingIndices.ListDanglingIndices.html"><span>OpenSearch\Endpoints\DanglingIndices\ListDanglingIndices</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.DeleteTransform.html"><span>OpenSearch\Endpoints\DataFrameTransformDeprecated\DeleteTransform</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.GetTransform.html"><span>OpenSearch\Endpoints\DataFrameTransformDeprecated\GetTransform</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.GetTransformStats.html"><span>OpenSearch\Endpoints\DataFrameTransformDeprecated\GetTransformStats</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.PreviewTransform.html"><span>OpenSearch\Endpoints\DataFrameTransformDeprecated\PreviewTransform</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.PutTransform.html"><span>OpenSearch\Endpoints\DataFrameTransformDeprecated\PutTransform</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.StartTransform.html"><span>OpenSearch\Endpoints\DataFrameTransformDeprecated\StartTransform</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.StopTransform.html"><span>OpenSearch\Endpoints\DataFrameTransformDeprecated\StopTransform</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.UpdateTransform.html"><span>OpenSearch\Endpoints\DataFrameTransformDeprecated\UpdateTransform</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Delete.html"><span>OpenSearch\Endpoints\Delete</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DeleteByQuery.html"><span>OpenSearch\Endpoints\DeleteByQuery</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DeleteByQueryRethrottle.html"><span>OpenSearch\Endpoints\DeleteByQueryRethrottle</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DeleteScript.html"><span>OpenSearch\Endpoints\DeleteScript</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Exists.html"><span>OpenSearch\Endpoints\Exists</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.ExistsSource.html"><span>OpenSearch\Endpoints\ExistsSource</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Explain.html"><span>OpenSearch\Endpoints\Explain</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.FieldCaps.html"><span>OpenSearch\Endpoints\FieldCaps</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Get.html"><span>OpenSearch\Endpoints\Get</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.GetScript.html"><span>OpenSearch\Endpoints\GetScript</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.GetScriptContext.html"><span>OpenSearch\Endpoints\GetScriptContext</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.GetScriptLanguages.html"><span>OpenSearch\Endpoints\GetScriptLanguages</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.GetSource.html"><span>OpenSearch\Endpoints\GetSource</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Index.html"><span>OpenSearch\Endpoints\Index</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.AddBlock.html"><span>OpenSearch\Endpoints\Indices\AddBlock</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Analyze.html"><span>OpenSearch\Endpoints\Indices\Analyze</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.ClearCache.html"><span>OpenSearch\Endpoints\Indices\ClearCache</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.CloneIndices.html"><span>OpenSearch\Endpoints\Indices\CloneIndices</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Close.html"><span>OpenSearch\Endpoints\Indices\Close</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Create.html"><span>OpenSearch\Endpoints\Indices\Create</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.CreateDataStream.html"><span>OpenSearch\Endpoints\Indices\CreateDataStream</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.DataStreamsStats.html"><span>OpenSearch\Endpoints\Indices\DataStreamsStats</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Delete.html"><span>OpenSearch\Endpoints\Indices\Delete</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteAlias.html"><span>OpenSearch\Endpoints\Indices\DeleteAlias</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteDataStream.html"><span>OpenSearch\Endpoints\Indices\DeleteDataStream</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteIndexTemplate.html"><span>OpenSearch\Endpoints\Indices\DeleteIndexTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteTemplate.html"><span>OpenSearch\Endpoints\Indices\DeleteTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Exists.html"><span>OpenSearch\Endpoints\Indices\Exists</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.ExistsAlias.html"><span>OpenSearch\Endpoints\Indices\ExistsAlias</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.ExistsIndexTemplate.html"><span>OpenSearch\Endpoints\Indices\ExistsIndexTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.ExistsTemplate.html"><span>OpenSearch\Endpoints\Indices\ExistsTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Flush.html"><span>OpenSearch\Endpoints\Indices\Flush</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.ForceMerge.html"><span>OpenSearch\Endpoints\Indices\ForceMerge</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Freeze.html"><span>OpenSearch\Endpoints\Indices\Freeze</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Get.html"><span>OpenSearch\Endpoints\Indices\Get</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.GetAlias.html"><span>OpenSearch\Endpoints\Indices\GetAlias</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.GetDataStream.html"><span>OpenSearch\Endpoints\Indices\GetDataStream</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.GetFieldMapping.html"><span>OpenSearch\Endpoints\Indices\GetFieldMapping</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.GetIndexTemplate.html"><span>OpenSearch\Endpoints\Indices\GetIndexTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.GetMapping.html"><span>OpenSearch\Endpoints\Indices\GetMapping</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.GetSettings.html"><span>OpenSearch\Endpoints\Indices\GetSettings</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.GetTemplate.html"><span>OpenSearch\Endpoints\Indices\GetTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.GetUpgrade.html"><span>OpenSearch\Endpoints\Indices\GetUpgrade</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Open.html"><span>OpenSearch\Endpoints\Indices\Open</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.PutAlias.html"><span>OpenSearch\Endpoints\Indices\PutAlias</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.PutIndexTemplate.html"><span>OpenSearch\Endpoints\Indices\PutIndexTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.PutMapping.html"><span>OpenSearch\Endpoints\Indices\PutMapping</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.PutSettings.html"><span>OpenSearch\Endpoints\Indices\PutSettings</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.PutTemplate.html"><span>OpenSearch\Endpoints\Indices\PutTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Recovery.html"><span>OpenSearch\Endpoints\Indices\Recovery</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Refresh.html"><span>OpenSearch\Endpoints\Indices\Refresh</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.ReloadSearchAnalyzers.html"><span>OpenSearch\Endpoints\Indices\ReloadSearchAnalyzers</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.ResolveIndex.html"><span>OpenSearch\Endpoints\Indices\ResolveIndex</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Rollover.html"><span>OpenSearch\Endpoints\Indices\Rollover</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Segments.html"><span>OpenSearch\Endpoints\Indices\Segments</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.ShardStores.html"><span>OpenSearch\Endpoints\Indices\ShardStores</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Shrink.html"><span>OpenSearch\Endpoints\Indices\Shrink</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.SimulateIndexTemplate.html"><span>OpenSearch\Endpoints\Indices\SimulateIndexTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.SimulateTemplate.html"><span>OpenSearch\Endpoints\Indices\SimulateTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Split.html"><span>OpenSearch\Endpoints\Indices\Split</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Stats.html"><span>OpenSearch\Endpoints\Indices\Stats</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Unfreeze.html"><span>OpenSearch\Endpoints\Indices\Unfreeze</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.UpdateAliases.html"><span>OpenSearch\Endpoints\Indices\UpdateAliases</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Upgrade.html"><span>OpenSearch\Endpoints\Indices\Upgrade</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.ValidateQuery.html"><span>OpenSearch\Endpoints\Indices\ValidateQuery</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Info.html"><span>OpenSearch\Endpoints\Info</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Ingest.DeletePipeline.html"><span>OpenSearch\Endpoints\Ingest\DeletePipeline</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Ingest.GetPipeline.html"><span>OpenSearch\Endpoints\Ingest\GetPipeline</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Ingest.ProcessorGrok.html"><span>OpenSearch\Endpoints\Ingest\ProcessorGrok</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Ingest.PutPipeline.html"><span>OpenSearch\Endpoints\Ingest\PutPipeline</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Ingest.Simulate.html"><span>OpenSearch\Endpoints\Ingest\Simulate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Mget.html"><span>OpenSearch\Endpoints\Mget</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Monitoring.Bulk.html"><span>OpenSearch\Endpoints\Monitoring\Bulk</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Msearch.html"><span>OpenSearch\Endpoints\Msearch</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.MsearchTemplate.html"><span>OpenSearch\Endpoints\MsearchTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.MTermVectors.html"><span>OpenSearch\Endpoints\MTermVectors</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Nodes.HotThreads.html"><span>OpenSearch\Endpoints\Nodes\HotThreads</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Nodes.Info.html"><span>OpenSearch\Endpoints\Nodes\Info</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Nodes.ReloadSecureSettings.html"><span>OpenSearch\Endpoints\Nodes\ReloadSecureSettings</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Nodes.Stats.html"><span>OpenSearch\Endpoints\Nodes\Stats</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Nodes.Usage.html"><span>OpenSearch\Endpoints\Nodes\Usage</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.OpenPointInTime.html"><span>OpenSearch\Endpoints\OpenPointInTime</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Ping.html"><span>OpenSearch\Endpoints\Ping</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.PutScript.html"><span>OpenSearch\Endpoints\PutScript</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.RankEval.html"><span>OpenSearch\Endpoints\RankEval</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Reindex.html"><span>OpenSearch\Endpoints\Reindex</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.ReindexRethrottle.html"><span>OpenSearch\Endpoints\ReindexRethrottle</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.RenderSearchTemplate.html"><span>OpenSearch\Endpoints\RenderSearchTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.ScriptsPainlessExecute.html"><span>OpenSearch\Endpoints\ScriptsPainlessExecute</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Scroll.html"><span>OpenSearch\Endpoints\Scroll</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Search.html"><span>OpenSearch\Endpoints\Search</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.ClearCache.html"><span>OpenSearch\Endpoints\SearchableSnapshots\ClearCache</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.Mount.html"><span>OpenSearch\Endpoints\SearchableSnapshots\Mount</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.RepositoryStats.html"><span>OpenSearch\Endpoints\SearchableSnapshots\RepositoryStats</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.Stats.html"><span>OpenSearch\Endpoints\SearchableSnapshots\Stats</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.SearchShards.html"><span>OpenSearch\Endpoints\SearchShards</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.SearchTemplate.html"><span>OpenSearch\Endpoints\SearchTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.ChangePassword.html"><span>OpenSearch\Endpoints\Security\ChangePassword</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.CreateActionGroup.html"><span>OpenSearch\Endpoints\Security\CreateActionGroup</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.CreateRole.html"><span>OpenSearch\Endpoints\Security\CreateRole</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.CreateRoleMapping.html"><span>OpenSearch\Endpoints\Security\CreateRoleMapping</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.CreateTenant.html"><span>OpenSearch\Endpoints\Security\CreateTenant</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.CreateUser.html"><span>OpenSearch\Endpoints\Security\CreateUser</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.DeleteActionGroup.html"><span>OpenSearch\Endpoints\Security\DeleteActionGroup</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.DeleteDistinguishedNames.html"><span>OpenSearch\Endpoints\Security\DeleteDistinguishedNames</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.DeleteRole.html"><span>OpenSearch\Endpoints\Security\DeleteRole</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.DeleteRoleMapping.html"><span>OpenSearch\Endpoints\Security\DeleteRoleMapping</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.DeleteTenant.html"><span>OpenSearch\Endpoints\Security\DeleteTenant</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.DeleteUser.html"><span>OpenSearch\Endpoints\Security\DeleteUser</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.FlushCache.html"><span>OpenSearch\Endpoints\Security\FlushCache</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.GetAccount.html"><span>OpenSearch\Endpoints\Security\GetAccount</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.GetActionGroups.html"><span>OpenSearch\Endpoints\Security\GetActionGroups</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.GetCertificates.html"><span>OpenSearch\Endpoints\Security\GetCertificates</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.GetConfig.html"><span>OpenSearch\Endpoints\Security\GetConfig</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.GetDistinguishedNames.html"><span>OpenSearch\Endpoints\Security\GetDistinguishedNames</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.GetRoleMappings.html"><span>OpenSearch\Endpoints\Security\GetRoleMappings</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.GetRoles.html"><span>OpenSearch\Endpoints\Security\GetRoles</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.GetTenants.html"><span>OpenSearch\Endpoints\Security\GetTenants</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.GetUsers.html"><span>OpenSearch\Endpoints\Security\GetUsers</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.Health.html"><span>OpenSearch\Endpoints\Security\Health</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.PatchActionGroups.html"><span>OpenSearch\Endpoints\Security\PatchActionGroups</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.PatchConfig.html"><span>OpenSearch\Endpoints\Security\PatchConfig</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.PatchRoleMappings.html"><span>OpenSearch\Endpoints\Security\PatchRoleMappings</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.PatchRoles.html"><span>OpenSearch\Endpoints\Security\PatchRoles</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.PatchTenants.html"><span>OpenSearch\Endpoints\Security\PatchTenants</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.PatchUsers.html"><span>OpenSearch\Endpoints\Security\PatchUsers</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.UpdateConfig.html"><span>OpenSearch\Endpoints\Security\UpdateConfig</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.UpdateDistinguishedNames.html"><span>OpenSearch\Endpoints\Security\UpdateDistinguishedNames</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.CleanupRepository.html"><span>OpenSearch\Endpoints\Snapshot\CleanupRepository</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.CloneSnapshot.html"><span>OpenSearch\Endpoints\Snapshot\CloneSnapshot</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.Create.html"><span>OpenSearch\Endpoints\Snapshot\Create</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.CreateRepository.html"><span>OpenSearch\Endpoints\Snapshot\CreateRepository</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.Delete.html"><span>OpenSearch\Endpoints\Snapshot\Delete</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.DeleteRepository.html"><span>OpenSearch\Endpoints\Snapshot\DeleteRepository</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.Get.html"><span>OpenSearch\Endpoints\Snapshot\Get</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.GetRepository.html"><span>OpenSearch\Endpoints\Snapshot\GetRepository</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.Restore.html"><span>OpenSearch\Endpoints\Snapshot\Restore</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.Status.html"><span>OpenSearch\Endpoints\Snapshot\Status</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.VerifyRepository.html"><span>OpenSearch\Endpoints\Snapshot\VerifyRepository</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Sql.CursorClose.html"><span>OpenSearch\Endpoints\Sql\CursorClose</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Sql.Explain.html"><span>OpenSearch\Endpoints\Sql\Explain</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Sql.Query.html"><span>OpenSearch\Endpoints\Sql\Query</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Ssl.Certificates.html"><span>OpenSearch\Endpoints\Ssl\Certificates</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Tasks.Cancel.html"><span>OpenSearch\Endpoints\Tasks\Cancel</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Tasks.Get.html"><span>OpenSearch\Endpoints\Tasks\Get</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Tasks.ListTasks.html"><span>OpenSearch\Endpoints\Tasks\ListTasks</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.TermVectors.html"><span>OpenSearch\Endpoints\TermVectors</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Update.html"><span>OpenSearch\Endpoints\Update</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.UpdateByQuery.html"><span>OpenSearch\Endpoints\UpdateByQuery</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.UpdateByQueryRethrottle.html"><span>OpenSearch\Endpoints\UpdateByQueryRethrottle</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="OpenSearch.Handlers.SigV4Handler.html"><span>OpenSearch\Handlers\SigV4Handler</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Helper.Iterators.SearchHitIterator.html"><span>OpenSearch\Helper\Iterators\SearchHitIterator</span></a>
+
+		implements
+			<a href="Iterator.html"><span title="Iterator">Iterator</span></a>, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Helper.Iterators.SearchResponseIterator.html"><span>OpenSearch\Helper\Iterators\SearchResponseIterator</span></a>
+
+		implements
+			<a href="Iterator.html"><span title="Iterator">Iterator</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Namespaces.AbstractNamespace.html"><span>OpenSearch\Namespaces\AbstractNamespace</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="OpenSearch.Namespaces.AsyncSearchNamespace.html"><span>OpenSearch\Namespaces\AsyncSearchNamespace</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Namespaces.CatNamespace.html"><span>OpenSearch\Namespaces\CatNamespace</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Namespaces.ClusterNamespace.html"><span>OpenSearch\Namespaces\ClusterNamespace</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Namespaces.DanglingIndicesNamespace.html"><span>OpenSearch\Namespaces\DanglingIndicesNamespace</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Namespaces.DataFrameTransformDeprecatedNamespace.html"><span>OpenSearch\Namespaces\DataFrameTransformDeprecatedNamespace</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Namespaces.IndicesNamespace.html"><span>OpenSearch\Namespaces\IndicesNamespace</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Namespaces.IngestNamespace.html"><span>OpenSearch\Namespaces\IngestNamespace</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Namespaces.MonitoringNamespace.html"><span>OpenSearch\Namespaces\MonitoringNamespace</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Namespaces.NodesNamespace.html"><span>OpenSearch\Namespaces\NodesNamespace</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Namespaces.SearchableSnapshotsNamespace.html"><span>OpenSearch\Namespaces\SearchableSnapshotsNamespace</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Namespaces.SecurityNamespace.html"><span>OpenSearch\Namespaces\SecurityNamespace</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Namespaces.SnapshotNamespace.html"><span>OpenSearch\Namespaces\SnapshotNamespace</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Namespaces.SqlNamespace.html"><span>OpenSearch\Namespaces\SqlNamespace</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Namespaces.SslNamespace.html"><span>OpenSearch\Namespaces\SslNamespace</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Namespaces.TasksNamespace.html"><span>OpenSearch\Namespaces\TasksNamespace</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="OpenSearch.Namespaces.BooleanRequestWrapper.html"><span>OpenSearch\Namespaces\BooleanRequestWrapper</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Serializers.ArrayToJSONSerializer.html"><span>OpenSearch\Serializers\ArrayToJSONSerializer</span></a>
+
+		implements
+			<a href="OpenSearch.Serializers.SerializerInterface.html"><span title="OpenSearch\Serializers\SerializerInterface">SerializerInterface</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Serializers.EverythingToJSONSerializer.html"><span>OpenSearch\Serializers\EverythingToJSONSerializer</span></a>
+
+		implements
+			<a href="OpenSearch.Serializers.SerializerInterface.html"><span title="OpenSearch\Serializers\SerializerInterface">SerializerInterface</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Serializers.SmartSerializer.html"><span>OpenSearch\Serializers\SmartSerializer</span></a>
+
+		implements
+			<a href="OpenSearch.Serializers.SerializerInterface.html"><span title="OpenSearch\Serializers\SerializerInterface">SerializerInterface</span></a>
+
+	</li>
+	<li>
+<a href="OpenSearch.Transport.html"><span>OpenSearch\Transport</span></a>
+
+
+	</li>
+	<li>
+<a href="Psr.Log.AbstractLogger.html"><span>Psr\Log\AbstractLogger</span></a>
+
+		implements
+			<a href="Psr.Log.LoggerInterface.html"><span title="Psr\Log\LoggerInterface">LoggerInterface</span></a>
+
+		uses
+			<a href="Psr.Log.LoggerTrait.html"><span title="Psr\Log\LoggerTrait">LoggerTrait</span></a>
+	<ul class="classTree">
+	<li>
+<a href="OpenSearch.Common.EmptyLogger.html"><span>OpenSearch\Common\EmptyLogger</span></a>
+
+		implements
+			<a href="Psr.Log.LoggerInterface.html"><span title="Psr\Log\LoggerInterface">LoggerInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+
+			<h3>Interfaces</h3>
+	<ul class="classTree">
+	<li>
+<a href="ArrayAccess.html"><span>ArrayAccess</span></a>
+
+
+	</li>
+	<li>
+<a href="Aws.Credentials.CredentialsInterface.html"><span>Aws\Credentials\CredentialsInterface</span></a>
+
+
+	</li>
+	<li>
+<a href="Countable.html"><span>Countable</span></a>
+
+
+	</li>
+	<li>
+<a href="GuzzleHttp.Ring.Exception.CancelledException.html"><span>GuzzleHttp\Ring\Exception\CancelledException</span></a>
+
+
+	</li>
+	<li>
+<a href="GuzzleHttp.Ring.Future.FutureArrayInterface.html"><span>GuzzleHttp\Ring\Future\FutureArrayInterface</span></a>
+		extends
+			<a href="GuzzleHttp.Ring.Future.FutureInterface.html"><span title="GuzzleHttp\Ring\Future\FutureInterface">FutureInterface</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>
+
+
+	</li>
+	<li>
+<a href="GuzzleHttp.Ring.Future.FutureInterface.html"><span>GuzzleHttp\Ring\Future\FutureInterface</span></a>
+		extends
+			<a href="React.Promise.PromiseInterface.html"><span title="React\Promise\PromiseInterface">PromiseInterface</span></a>, 
+			<a href="React.Promise.PromisorInterface.html"><span title="React\Promise\PromisorInterface">PromisorInterface</span></a>
+
+
+	</li>
+	<li>
+<a href="Iterator.html"><span>Iterator</span></a>
+		extends
+			<a href="Traversable.html"><span title="Traversable">Traversable</span></a>
+
+
+	</li>
+	<li>
+<a href="IteratorAggregate.html"><span>IteratorAggregate</span></a>
+		extends
+			<a href="Traversable.html"><span title="Traversable">Traversable</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Common.Exceptions.OpenSearchException.html"><span>OpenSearch\Common\Exceptions\OpenSearchException</span></a>
+		extends
+			<a href="Throwable.html"><span title="Throwable">Throwable</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.ConnectionPool.ConnectionPoolInterface.html"><span>OpenSearch\ConnectionPool\ConnectionPoolInterface</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.ConnectionPool.Selectors.SelectorInterface.html"><span>OpenSearch\ConnectionPool\Selectors\SelectorInterface</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Connections.ConnectionFactoryInterface.html"><span>OpenSearch\Connections\ConnectionFactoryInterface</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Connections.ConnectionInterface.html"><span>OpenSearch\Connections\ConnectionInterface</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Namespaces.NamespaceBuilderInterface.html"><span>OpenSearch\Namespaces\NamespaceBuilderInterface</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Serializers.SerializerInterface.html"><span>OpenSearch\Serializers\SerializerInterface</span></a>
+
+
+	</li>
+	<li>
+<a href="Psr.Log.LoggerInterface.html"><span>Psr\Log\LoggerInterface</span></a>
+
+
+	</li>
+	<li>
+<a href="React.Promise.PromiseInterface.html"><span>React\Promise\PromiseInterface</span></a>
+
+
+	</li>
+	<li>
+<a href="React.Promise.PromisorInterface.html"><span>React\Promise\PromisorInterface</span></a>
+
+
+	</li>
+	<li>
+<a href="Stringable.html"><span>Stringable</span></a>
+
+
+	</li>
+	<li>
+<a href="Throwable.html"><span>Throwable</span></a>
+		extends
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>
+
+
+	</li>
+	<li>
+<a href="Traversable.html"><span>Traversable</span></a>
+
+
+	</li>
+	</ul>
+
+			<h3>Traits</h3>
+	<ul class="classTree">
+	<li>
+<a href="GuzzleHttp.Ring.Future.MagicFutureTrait.html"><span>GuzzleHttp\Ring\Future\MagicFutureTrait</span></a>
+
+
+	</li>
+	<li>
+<a href="Psr.Log.LoggerTrait.html"><span>Psr\Log\LoggerTrait</span></a>
+
+
+	</li>
+	</ul>
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.3</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,3041 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Class OpenSearch\Client |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-OpenSearch.html">OpenSearch</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Common.html">Common</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.ConnectionPool.html">ConnectionPool</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Connections.html">Connections</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.html">Endpoints</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Handlers.html">Handlers</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Helper.html">Helper</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Namespaces.html">Namespaces</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Serializers.html">Serializers</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="OpenSearch.Client.html">
+							Client
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.ClientBuilder.html">
+							ClientBuilder
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Transport.html">
+							Transport
+						</a>
+					</li>
+			</ul>
+		</div>
+
+
+
+
+
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-OpenSearch.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="OpenSearch.Client.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-OpenSearch.html">OpenSearch</a>\<a href="OpenSearch.Client.html">Client</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Class Client</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-OpenSearch.Client.html#54" title="Go to source code">OpenSearch/Client.php</a><br>
+		</div>
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#153-181" title="Go to source code">__construct</a>(<span><a href="OpenSearch.Transport.html"><span title="OpenSearch\Transport">Transport</span></a> <var>$transport</var></span>, <span>callable <var>$endpoint</var></span>, <span><a href="OpenSearch.Namespaces.NamespaceBuilderInterface.html"><span title="OpenSearch\Namespaces\NamespaceBuilderInterface">NamespaceBuilderInterface</span></a>[] <var>$registeredNamespaces</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Client constructor
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Client constructor</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bulk" id="_bulk">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#183-211" title="Go to source code">bulk</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['index']                  = (string) Default index for items which don't provide one
+$params['wait_for_active…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['index']                  = (string) Default index for items which don't provide one
+$params['wait_for_active_shards'] = (string) Sets the number of shard copies that must be active before proceeding with the bulk operation. Defaults to 1, meaning the primary shard only. Set to <code>all</code> for all shard copies, otherwise set to any non-negative value less than or equal to the total number of copies for the shard (number of replicas + 1)
+$params['refresh']                = (enum) If <code>true</code> then refresh the affected shards to make this operation visible to search, if <code>wait_for</code> then wait for a refresh to make this operation visible to search, if <code>false</code> (the default) then do nothing with refreshes. (Options = true,false,wait_for)
+$params['routing']                = (string) Specific routing value
+$params['timeout']                = (time) Explicit operation timeout
+$params['_source']                = (list) True or false to return the _source field or not, or default list of fields to return, can be overridden on each sub-request
+$params['_source_excludes']       = (list) Default list of fields to exclude from the returned _source field, can be overridden on each sub-request
+$params['_source_includes']       = (list) Default list of fields to extract and return from the _source field, can be overridden on each sub-request
+$params['pipeline']               = (string) The pipeline id to preprocess incoming documents with
+$params['require_alias']          = (boolean) Sets require_alias for all incoming documents. Defaults to unset (false)
+$params['body']                   = (array) The operation definition and data (action-data pairs), separated by newlines (Required)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bulk">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="clearScroll" id="_clearScroll">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#212-231" title="Go to source code">clearScroll</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['scroll_id'] = DEPRECATED (list) A comma-separated list of scroll IDs to clear
+$params['body']      = (array) A…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['scroll_id'] = DEPRECATED (list) A comma-separated list of scroll IDs to clear
+$params['body']      = (array) A comma-separated list of scroll IDs to clear if none was specified via the scroll_id parameter</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_clearScroll">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="count" id="_count">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#232-265" title="Go to source code">count</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['index']              = (list) A comma-separated list of indices to restrict the results
+$params['ignore…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['index']              = (list) A comma-separated list of indices to restrict the results
+$params['ignore_unavailable'] = (boolean) Whether specified concrete indices should be ignored when unavailable (missing or closed)
+$params['ignore_throttled']   = (boolean) Whether specified concrete, expanded or aliased indices should be ignored when throttled
+$params['allow_no_indices']   = (boolean) Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes <code>_all</code> string or when no indices have been specified)
+$params['expand_wildcards']   = (enum) Whether to expand wildcard expression to concrete indices that are open, closed or both. (Options = open,closed,hidden,none,all) (Default = open)
+$params['min_score']          = (number) Include only documents with a specific <code>_score</code> value in the result
+$params['preference']         = (string) Specify the node or shard the operation should be performed on (default: random)
+$params['routing']            = (list) A comma-separated list of specific routing values
+$params['q']                  = (string) Query in the Lucene query string syntax
+$params['analyzer']           = (string) The analyzer to use for the query string
+$params['analyze_wildcard']   = (boolean) Specify whether wildcard and prefix queries should be analyzed (default: false)
+$params['default_operator']   = (enum) The default operator for query string query (AND or OR) (Options = AND,OR) (Default = OR)
+$params['df']                 = (string) The field to use as default where no field prefix is given in the query string
+$params['lenient']            = (boolean) Specify whether format-based query failures (such as providing text to a numeric field) should be ignored
+$params['terminate_after']    = (number) The maximum count for each shard, upon reaching which the query execution will terminate early
+$params['body']               = (array) A query to restrict the results specified with the Query DSL (optional)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_count">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="create" id="_create">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#266-295" title="Go to source code">create</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['id']                     = (string) Document ID (Required)
+$params['index']                  = (string) The…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['id']                     = (string) Document ID (Required)
+$params['index']                  = (string) The name of the index (Required)
+$params['wait_for_active_shards'] = (string) Sets the number of shard copies that must be active before proceeding with the index operation. Defaults to 1, meaning the primary shard only. Set to <code>all</code> for all shard copies, otherwise set to any non-negative value less than or equal to the total number of copies for the shard (number of replicas + 1)
+$params['refresh']                = (enum) If <code>true</code> then refresh the affected shards to make this operation visible to search, if <code>wait_for</code> then wait for a refresh to make this operation visible to search, if <code>false</code> (the default) then do nothing with refreshes. (Options = true,false,wait_for)
+$params['routing']                = (string) Specific routing value
+$params['timeout']                = (time) Explicit operation timeout
+$params['version']                = (number) Explicit version number for concurrency control
+$params['version_type']           = (enum) Specific version type (Options = internal,external,external_gte)
+$params['pipeline']               = (string) The pipeline id to preprocess incoming documents with
+$params['body']                   = (array) The document (Required)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_create">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="delete" id="_delete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#296-323" title="Go to source code">delete</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['id']                     = (string) The document ID (Required)
+$params['index']                  = (string)…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['id']                     = (string) The document ID (Required)
+$params['index']                  = (string) The name of the index (Required)
+$params['wait_for_active_shards'] = (string) Sets the number of shard copies that must be active before proceeding with the delete operation. Defaults to 1, meaning the primary shard only. Set to <code>all</code> for all shard copies, otherwise set to any non-negative value less than or equal to the total number of copies for the shard (number of replicas + 1)
+$params['refresh']                = (enum) If <code>true</code> then refresh the affected shards to make this operation visible to search, if <code>wait_for</code> then wait for a refresh to make this operation visible to search, if <code>false</code> (the default) then do nothing with refreshes. (Options = true,false,wait_for)
+$params['routing']                = (string) Specific routing value
+$params['timeout']                = (time) Explicit operation timeout
+$params['if_seq_no']              = (number) only perform the delete operation if the last operation that has changed the document has the specified sequence number
+$params['if_primary_term']        = (number) only perform the delete operation if the last operation that has changed the document has the specified primary term
+$params['version']                = (number) Explicit version number for concurrency control
+$params['version_type']           = (enum) Specific version type (Options = internal,external,external_gte,force)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_delete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="deleteByQuery" id="_deleteByQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#324-376" title="Go to source code">deleteByQuery</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['index']                  = (list) A comma-separated list of index names to search; use `_all` or empty string…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['index']                  = (list) A comma-separated list of index names to search; use <code>_all</code> or empty string to perform the operation on all indices (Required)
+$params['analyzer']               = (string) The analyzer to use for the query string
+$params['analyze_wildcard']       = (boolean) Specify whether wildcard and prefix queries should be analyzed (default: false)
+$params['default_operator']       = (enum) The default operator for query string query (AND or OR) (Options = AND,OR) (Default = OR)
+$params['df']                     = (string) The field to use as default where no field prefix is given in the query string
+$params['from']                   = (number) Starting offset (default: 0)
+$params['ignore_unavailable']     = (boolean) Whether specified concrete indices should be ignored when unavailable (missing or closed)
+$params['allow_no_indices']       = (boolean) Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes <code>_all</code> string or when no indices have been specified)
+$params['conflicts']              = (enum) What to do when the delete by query hits version conflicts? (Options = abort,proceed) (Default = abort)
+$params['expand_wildcards']       = (enum) Whether to expand wildcard expression to concrete indices that are open, closed or both. (Options = open,closed,hidden,none,all) (Default = open)
+$params['lenient']                = (boolean) Specify whether format-based query failures (such as providing text to a numeric field) should be ignored
+$params['preference']             = (string) Specify the node or shard the operation should be performed on (default: random)
+$params['q']                      = (string) Query in the Lucene query string syntax
+$params['routing']                = (list) A comma-separated list of specific routing values
+$params['scroll']                 = (time) Specify how long a consistent view of the index should be maintained for scrolled search
+$params['search_type']            = (enum) Search operation type (Options = query_then_fetch,dfs_query_then_fetch)
+$params['search_timeout']         = (time) Explicit timeout for each search request. Defaults to no timeout.
+$params['size']                   = (number) Deprecated, please use <code>max_docs</code> instead
+$params['max_docs']               = (number) Maximum number of documents to process (default: all documents)
+$params['sort']                   = (list) A comma-separated list of <field>:<direction> pairs
+$params['_source']                = (list) True or false to return the _source field or not, or a list of fields to return
+$params['_source_excludes']       = (list) A list of fields to exclude from the returned _source field
+$params['_source_includes']       = (list) A list of fields to extract and return from the _source field
+$params['terminate_after']        = (number) The maximum number of documents to collect for each shard, upon reaching which the query execution will terminate early.
+$params['stats']                  = (list) Specific 'tag' of the request for logging and statistical purposes
+$params['version']                = (boolean) Specify whether to return document version as part of a hit
+$params['request_cache']          = (boolean) Specify if request cache should be used for this request or not, defaults to index level setting
+$params['refresh']                = (boolean) Should the effected indexes be refreshed?
+$params['timeout']                = (time) Time each individual bulk request should wait for shards that are unavailable. (Default = 1m)
+$params['wait_for_active_shards'] = (string) Sets the number of shard copies that must be active before proceeding with the delete by query operation. Defaults to 1, meaning the primary shard only. Set to <code>all</code> for all shard copies, otherwise set to any non-negative value less than or equal to the total number of copies for the shard (number of replicas + 1)
+$params['scroll_size']            = (number) Size on the scroll request powering the delete by query (Default = 100)
+$params['wait_for_completion']    = (boolean) Should the request should block until the delete by query is complete. (Default = true)
+$params['requests_per_second']    = (number) The throttle for this request in sub-requests per second. -1 means no throttle. (Default = 0)
+$params['slices']                 = (number|string) The number of slices this task should be divided into. Defaults to 1, meaning the task isn't sliced into subtasks. Can be set to <code>auto</code>. (Default = 1)
+$params['body']                   = (array) The search definition using the Query DSL (Required)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_deleteByQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="deleteByQueryRethrottle" id="_deleteByQueryRethrottle">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#377-394" title="Go to source code">deleteByQueryRethrottle</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['task_id']             = (string) The task id to rethrottle
+$params['requests_per_second'] = (number) The…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['task_id']             = (string) The task id to rethrottle
+$params['requests_per_second'] = (number) The throttle to set on this request in floating sub-requests per second. -1 means set no throttle. (Required)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_deleteByQueryRethrottle">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="deleteScript" id="_deleteScript">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#395-413" title="Go to source code">deleteScript</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['id']             = (string) Script ID
+$params['timeout']        = (time) Explicit operation timeout
+$params[…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['id']             = (string) Script ID
+$params['timeout']        = (time) Explicit operation timeout
+$params['cluster_manager_timeout'] = (time) Specify timeout for connection to cluster_manager</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_deleteScript">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="exists" id="_exists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#414-446" title="Go to source code">exists</a>(<span>array <var>$params</var> = []</span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['id']               = (string) The document ID (Required)
+$params['index']            = (string) The name of…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['id']               = (string) The document ID (Required)
+$params['index']            = (string) The name of the index (Required)
+$params['stored_fields']    = (list) A comma-separated list of stored fields to return in the response
+$params['preference']       = (string) Specify the node or shard the operation should be performed on (default: random)
+$params['realtime']         = (boolean) Specify whether to perform the operation in realtime or search mode
+$params['refresh']          = (boolean) Refresh the shard containing the document before performing the operation
+$params['routing']          = (string) Specific routing value
+$params['_source']          = (list) True or false to return the _source field or not, or a list of fields to return
+$params['_source_excludes'] = (list) A list of fields to exclude from the returned _source field
+$params['_source_includes'] = (list) A list of fields to extract and return from the _source field
+$params['version']          = (number) Explicit version number for concurrency control
+$params['version_type']     = (enum) Specific version type (Options = internal,external,external_gte,force)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_exists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="existsSource" id="_existsSource">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#447-478" title="Go to source code">existsSource</a>(<span>array <var>$params</var> = []</span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['id']               = (string) The document ID (Required)
+$params['index']            = (string) The name of…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['id']               = (string) The document ID (Required)
+$params['index']            = (string) The name of the index (Required)
+$params['preference']       = (string) Specify the node or shard the operation should be performed on (default: random)
+$params['realtime']         = (boolean) Specify whether to perform the operation in realtime or search mode
+$params['refresh']          = (boolean) Refresh the shard containing the document before performing the operation
+$params['routing']          = (string) Specific routing value
+$params['_source']          = (list) True or false to return the _source field or not, or a list of fields to return
+$params['_source_excludes'] = (list) A list of fields to exclude from the returned _source field
+$params['_source_includes'] = (list) A list of fields to extract and return from the _source field
+$params['version']          = (number) Explicit version number for concurrency control
+$params['version_type']     = (enum) Specific version type (Options = internal,external,external_gte,force)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_existsSource">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="explain" id="_explain">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#479-513" title="Go to source code">explain</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['id']               = (string) The document ID (Required)
+$params['index']            = (string) The name of…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['id']               = (string) The document ID (Required)
+$params['index']            = (string) The name of the index (Required)
+$params['analyze_wildcard'] = (boolean) Specify whether wildcards and prefix queries in the query string query should be analyzed (default: false)
+$params['analyzer']         = (string) The analyzer for the query string query
+$params['default_operator'] = (enum) The default operator for query string query (AND or OR) (Options = AND,OR) (Default = OR)
+$params['df']               = (string) The default field for query string query (default: _all)
+$params['stored_fields']    = (list) A comma-separated list of stored fields to return in the response
+$params['lenient']          = (boolean) Specify whether format-based query failures (such as providing text to a numeric field) should be ignored
+$params['preference']       = (string) Specify the node or shard the operation should be performed on (default: random)
+$params['q']                = (string) Query in the Lucene query string syntax
+$params['routing']          = (string) Specific routing value
+$params['_source']          = (list) True or false to return the _source field or not, or a list of fields to return
+$params['_source_excludes'] = (list) A list of fields to exclude from the returned _source field
+$params['_source_includes'] = (list) A list of fields to extract and return from the _source field
+$params['body']             = (array) The query definition using the Query DSL</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_explain">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fieldCaps" id="_fieldCaps">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#514-538" title="Go to source code">fieldCaps</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['index']              = (list) A comma-separated list of index names; use `_all` or empty string to perform the…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['index']              = (list) A comma-separated list of index names; use <code>_all</code> or empty string to perform the operation on all indices
+$params['fields']             = (list) A comma-separated list of field names
+$params['ignore_unavailable'] = (boolean) Whether specified concrete indices should be ignored when unavailable (missing or closed)
+$params['allow_no_indices']   = (boolean) Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes <code>_all</code> string or when no indices have been specified)
+$params['expand_wildcards']   = (enum) Whether to expand wildcard expression to concrete indices that are open, closed or both. (Options = open,closed,hidden,none,all) (Default = open)
+$params['include_unmapped']   = (boolean) Indicates whether unmapped fields should be included in the response. (Default = false)
+$params['body']               = (array) An index filter specified with the Query DSL</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fieldCaps">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#539-568" title="Go to source code">get</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['id']               = (string) The document ID (Required)
+$params['index']            = (string) The name of…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['id']               = (string) The document ID (Required)
+$params['index']            = (string) The name of the index (Required)
+$params['stored_fields']    = (list) A comma-separated list of stored fields to return in the response
+$params['preference']       = (string) Specify the node or shard the operation should be performed on (default: random)
+$params['realtime']         = (boolean) Specify whether to perform the operation in realtime or search mode
+$params['refresh']          = (boolean) Refresh the shard containing the document before performing the operation
+$params['routing']          = (string) Specific routing value
+$params['_source']          = (list) True or false to return the _source field or not, or a list of fields to return
+$params['_source_excludes'] = (list) A list of fields to exclude from the returned _source field
+$params['_source_includes'] = (list) A list of fields to extract and return from the _source field
+$params['version']          = (number) Explicit version number for concurrency control
+$params['version_type']     = (enum) Specific version type (Options = internal,external,external_gte,force)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getScript" id="_getScript">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#569-586" title="Go to source code">getScript</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['id']             = (string) Script ID
+$params['cluster_manager_timeout'] = (time) Specify timeout for…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['id']             = (string) Script ID
+$params['cluster_manager_timeout'] = (time) Specify timeout for connection to cluster_manager</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getScript">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getScriptContext" id="_getScriptContext">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#587-603" title="Go to source code">getScriptContext</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getScriptContext">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getScriptLanguages" id="_getScriptLanguages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#604-620" title="Go to source code">getScriptLanguages</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getScriptLanguages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSource" id="_getSource">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#621-649" title="Go to source code">getSource</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['id']               = (string) The document ID (Required)
+$params['index']            = (string) The name of…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['id']               = (string) The document ID (Required)
+$params['index']            = (string) The name of the index (Required)
+$params['preference']       = (string) Specify the node or shard the operation should be performed on (default: random)
+$params['realtime']         = (boolean) Specify whether to perform the operation in realtime or search mode
+$params['refresh']          = (boolean) Refresh the shard containing the document before performing the operation
+$params['routing']          = (string) Specific routing value
+$params['_source']          = (list) True or false to return the _source field or not, or a list of fields to return
+$params['_source_excludes'] = (list) A list of fields to exclude from the returned _source field
+$params['_source_includes'] = (list) A list of fields to extract and return from the _source field
+$params['version']          = (number) Explicit version number for concurrency control
+$params['version_type']     = (enum) Specific version type (Options = internal,external,external_gte,force)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSource">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="index" id="_index">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#650-683" title="Go to source code">index</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['id']                     = (string) Document ID
+$params['index']                  = (string) The name of the…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['id']                     = (string) Document ID
+$params['index']                  = (string) The name of the index (Required)
+$params['wait_for_active_shards'] = (string) Sets the number of shard copies that must be active before proceeding with the index operation. Defaults to 1, meaning the primary shard only. Set to <code>all</code> for all shard copies, otherwise set to any non-negative value less than or equal to the total number of copies for the shard (number of replicas + 1)
+$params['op_type']                = (enum) Explicit operation type. Defaults to <code>index</code> for requests with an explicit document ID, and to <code>create</code>for requests without an explicit document ID (Options = index,create)
+$params['refresh']                = (enum) If <code>true</code> then refresh the affected shards to make this operation visible to search, if <code>wait_for</code> then wait for a refresh to make this operation visible to search, if <code>false</code> (the default) then do nothing with refreshes. (Options = true,false,wait_for)
+$params['routing']                = (string) Specific routing value
+$params['timeout']                = (time) Explicit operation timeout
+$params['version']                = (number) Explicit version number for concurrency control
+$params['version_type']           = (enum) Specific version type (Options = internal,external,external_gte)
+$params['if_seq_no']              = (number) only perform the index operation if the last operation that has changed the document has the specified sequence number
+$params['if_primary_term']        = (number) only perform the index operation if the last operation that has changed the document has the specified primary term
+$params['pipeline']               = (string) The pipeline id to preprocess incoming documents with
+$params['require_alias']          = (boolean) When true, requires destination to be an alias. Default is false
+$params['body']                   = (array) The document (Required)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_index">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="info" id="_info">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#684-696" title="Go to source code">info</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_info">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mget" id="_mget">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#697-724" title="Go to source code">mget</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['index']            = (string) The name of the index
+$params['stored_fields']    = (list) A comma-separated…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['index']            = (string) The name of the index
+$params['stored_fields']    = (list) A comma-separated list of stored fields to return in the response
+$params['preference']       = (string) Specify the node or shard the operation should be performed on (default: random)
+$params['realtime']         = (boolean) Specify whether to perform the operation in realtime or search mode
+$params['refresh']          = (boolean) Refresh the shard containing the document before performing the operation
+$params['routing']          = (string) Specific routing value
+$params['_source']          = (list) True or false to return the _source field or not, or a list of fields to return
+$params['_source_excludes'] = (list) A list of fields to exclude from the returned _source field
+$params['_source_includes'] = (list) A list of fields to extract and return from the _source field
+$params['body']             = (array) Document identifiers; can be either <code>docs</code> (containing full document information) or <code>ids</code> (when index and type is provided in the URL. (Required)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mget">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="msearch" id="_msearch">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#725-751" title="Go to source code">msearch</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['index']                         = (list) A comma-separated list of index names to use as default
+$params[…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['index']                         = (list) A comma-separated list of index names to use as default
+$params['search_type']                   = (enum) Search operation type (Options = query_then_fetch,query_and_fetch,dfs_query_then_fetch,dfs_query_and_fetch)
+$params['max_concurrent_searches']       = (number) Controls the maximum number of concurrent searches the multi search api will execute
+$params['typed_keys']                    = (boolean) Specify whether aggregation and suggester names should be prefixed by their respective types in the response
+$params['pre_filter_shard_size']         = (number) A threshold that enforces a pre-filter roundtrip to prefilter search shards based on query rewriting if the number of shards the search request expands to exceeds the threshold. This filter roundtrip can limit the number of shards significantly if for instance a shard can not match any documents based on its rewrite method ie. if date filters are mandatory to match but the shard bounds and the query are disjoint.
+$params['max_concurrent_shard_requests'] = (number) The number of concurrent shard requests each sub search executes concurrently per node. This value should be used to limit the impact of the search on the cluster in order to limit the number of concurrent shard requests (Default = 5)
+$params['rest_total_hits_as_int']        = (boolean) Indicates whether hits.total should be rendered as an integer or an object in the rest search response (Default = false)
+$params['ccs_minimize_roundtrips']       = (boolean) Indicates whether network round-trips should be minimized as part of cross-cluster search requests execution (Default = true)
+$params['body']                          = (array) The request definitions (metadata-search request definition pairs), separated by newlines (Required)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_msearch">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="msearchTemplate" id="_msearchTemplate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#752-776" title="Go to source code">msearchTemplate</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['index']                   = (list) A comma-separated list of index names to use as default
+$params['search…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['index']                   = (list) A comma-separated list of index names to use as default
+$params['search_type']             = (enum) Search operation type (Options = query_then_fetch,query_and_fetch,dfs_query_then_fetch,dfs_query_and_fetch)
+$params['typed_keys']              = (boolean) Specify whether aggregation and suggester names should be prefixed by their respective types in the response
+$params['max_concurrent_searches'] = (number) Controls the maximum number of concurrent searches the multi search api will execute
+$params['rest_total_hits_as_int']  = (boolean) Indicates whether hits.total should be rendered as an integer or an object in the rest search response (Default = false)
+$params['ccs_minimize_roundtrips'] = (boolean) Indicates whether network round-trips should be minimized as part of cross-cluster search requests execution (Default = true)
+$params['body']                    = (array) The request definitions (metadata-search request definition pairs), separated by newlines (Required)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_msearchTemplate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mtermvectors" id="_mtermvectors">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#777-808" title="Go to source code">mtermvectors</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['index']            = (string) The index in which the document resides.
+$params['ids']              = (list) A…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['index']            = (string) The index in which the document resides.
+$params['ids']              = (list) A comma-separated list of documents ids. You must define ids as parameter or set &quot;ids&quot; or &quot;docs&quot; in the request body
+$params['term_statistics']  = (boolean) Specifies if total term frequency and document frequency should be returned. Applies to all returned documents unless otherwise specified in body &quot;params&quot; or &quot;docs&quot;. (Default = false)
+$params['field_statistics'] = (boolean) Specifies if document count, sum of document frequencies and sum of total term frequencies should be returned. Applies to all returned documents unless otherwise specified in body &quot;params&quot; or &quot;docs&quot;. (Default = true)
+$params['fields']           = (list) A comma-separated list of fields to return. Applies to all returned documents unless otherwise specified in body &quot;params&quot; or &quot;docs&quot;.
+$params['offsets']          = (boolean) Specifies if term offsets should be returned. Applies to all returned documents unless otherwise specified in body &quot;params&quot; or &quot;docs&quot;. (Default = true)
+$params['positions']        = (boolean) Specifies if term positions should be returned. Applies to all returned documents unless otherwise specified in body &quot;params&quot; or &quot;docs&quot;. (Default = true)
+$params['payloads']         = (boolean) Specifies if term payloads should be returned. Applies to all returned documents unless otherwise specified in body &quot;params&quot; or &quot;docs&quot;. (Default = true)
+$params['preference']       = (string) Specify the node or shard the operation should be performed on (default: random) .Applies to all returned documents unless otherwise specified in body &quot;params&quot; or &quot;docs&quot;.
+$params['routing']          = (string) Specific routing value. Applies to all returned documents unless otherwise specified in body &quot;params&quot; or &quot;docs&quot;.
+$params['realtime']         = (boolean) Specifies if requests are real-time as opposed to near-real-time (default: true).
+$params['version']          = (number) Explicit version number for concurrency control
+$params['version_type']     = (enum) Specific version type (Options = internal,external,external_gte,force)
+$params['body']             = (array) Define ids, documents, parameters or a list of parameters per document here. You must at least provide a list of document ids. See documentation.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mtermvectors">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ping" id="_ping">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#809-825" title="Go to source code">ping</a>(<span>array <var>$params</var> = []</span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ping">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="putScript" id="_putScript">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#826-850" title="Go to source code">putScript</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['id']             = (string) Script ID (Required)
+$params['context']        = (string) Script context
+$params[…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['id']             = (string) Script ID (Required)
+$params['context']        = (string) Script context
+$params['timeout']        = (time) Explicit operation timeout
+$params['cluster_manager_timeout'] = (time) Specify timeout for connection to cluster_manager
+$params['body']           = (array) The document (Required)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_putScript">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rankEval" id="_rankEval">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#851-878" title="Go to source code">rankEval</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['index']              = (list) A comma-separated list of index names to search; use `_all` or empty string to…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['index']              = (list) A comma-separated list of index names to search; use <code>_all</code> or empty string to perform the operation on all indices
+$params['ignore_unavailable'] = (boolean) Whether specified concrete indices should be ignored when unavailable (missing or closed)
+$params['allow_no_indices']   = (boolean) Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes <code>_all</code> string or when no indices have been specified)
+$params['expand_wildcards']   = (enum) Whether to expand wildcard expression to concrete indices that are open, closed or both. (Options = open,closed,hidden,none,all) (Default = open)
+$params['search_type']        = (enum) Search operation type (Options = query_then_fetch,dfs_query_then_fetch)
+$params['body']               = (array) The ranking evaluation search definition, including search requests, document ratings and ranking metric definition. (Required)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_rankEval">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reindex" id="_reindex">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#879-903" title="Go to source code">reindex</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['refresh']                = (boolean) Should the affected indexes be refreshed?
+$params['timeout']             …
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['refresh']                = (boolean) Should the affected indexes be refreshed?
+$params['timeout']                = (time) Time each individual bulk request should wait for shards that are unavailable. (Default = 1m)
+$params['wait_for_active_shards'] = (string) Sets the number of shard copies that must be active before proceeding with the reindex operation. Defaults to 1, meaning the primary shard only. Set to <code>all</code> for all shard copies, otherwise set to any non-negative value less than or equal to the total number of copies for the shard (number of replicas + 1)
+$params['wait_for_completion']    = (boolean) Should the request should block until the reindex is complete. (Default = true)
+$params['requests_per_second']    = (number) The throttle to set on this request in sub-requests per second. -1 means no throttle. (Default = 0)
+$params['scroll']                 = (time) Control how long to keep the search context alive (Default = 5m)
+$params['slices']                 = (number|string) The number of slices this task should be divided into. Defaults to 1, meaning the task isn't sliced into subtasks. Can be set to <code>auto</code>. (Default = 1)
+$params['max_docs']               = (number) Maximum number of documents to process (default: all documents)
+$params['body']                   = (array) The search definition using the Query DSL and the prototype for the index request. (Required)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reindex">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reindexRethrottle" id="_reindexRethrottle">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#904-921" title="Go to source code">reindexRethrottle</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['task_id']             = (string) The task id to rethrottle
+$params['requests_per_second'] = (number) The…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['task_id']             = (string) The task id to rethrottle
+$params['requests_per_second'] = (number) The throttle to set on this request in floating sub-requests per second. -1 means set no throttle. (Required)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reindexRethrottle">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="renderSearchTemplate" id="_renderSearchTemplate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#922-941" title="Go to source code">renderSearchTemplate</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['id']   = (string) The id of the stored search template
+$params['body'] = (array) The search definition…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['id']   = (string) The id of the stored search template
+$params['body'] = (array) The search definition template and its params</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_renderSearchTemplate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="scriptsPainlessExecute" id="_scriptsPainlessExecute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#942-962" title="Go to source code">scriptsPainlessExecute</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['body'] = (array) The script to execute
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['body'] = (array) The script to execute</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_scriptsPainlessExecute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="scroll" id="_scroll">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#963-984" title="Go to source code">scroll</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['scroll_id']              = DEPRECATED (string) The scroll ID
+$params['scroll']                 = (time)…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['scroll_id']              = DEPRECATED (string) The scroll ID
+$params['scroll']                 = (time) Specify how long a consistent view of the index should be maintained for scrolled search
+$params['rest_total_hits_as_int'] = (boolean) Indicates whether hits.total should be rendered as an integer or an object in the rest search response (Default = false)
+$params['body']                   = (array) The scroll ID if not passed by URL or query parameter.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_scroll">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="search" id="_search">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#985-1046" title="Go to source code">search</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['index']                         = (list) A comma-separated list of index names to search; use `_all` or empty…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['index']                         = (list) A comma-separated list of index names to search; use <code>_all</code> or empty string to perform the operation on all indices
+$params['analyzer']                      = (string) The analyzer to use for the query string
+$params['analyze_wildcard']              = (boolean) Specify whether wildcard and prefix queries should be analyzed (default: false)
+$params['ccs_minimize_roundtrips']       = (boolean) Indicates whether network round-trips should be minimized as part of cross-cluster search requests execution (Default = true)
+$params['default_operator']              = (enum) The default operator for query string query (AND or OR) (Options = AND,OR) (Default = OR)
+$params['df']                            = (string) The field to use as default where no field prefix is given in the query string
+$params['explain']                       = (boolean) Specify whether to return detailed information about score computation as part of a hit
+$params['stored_fields']                 = (list) A comma-separated list of stored fields to return as part of a hit
+$params['docvalue_fields']               = (list) A comma-separated list of fields to return as the docvalue representation of a field for each hit
+$params['from']                          = (number) Starting offset (default: 0)
+$params['ignore_unavailable']            = (boolean) Whether specified concrete indices should be ignored when unavailable (missing or closed)
+$params['ignore_throttled']              = (boolean) Whether specified concrete, expanded or aliased indices should be ignored when throttled
+$params['allow_no_indices']              = (boolean) Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes <code>_all</code> string or when no indices have been specified)
+$params['expand_wildcards']              = (enum) Whether to expand wildcard expression to concrete indices that are open, closed or both. (Options = open,closed,hidden,none,all) (Default = open)
+$params['lenient']                       = (boolean) Specify whether format-based query failures (such as providing text to a numeric field) should be ignored
+$params['preference']                    = (string) Specify the node or shard the operation should be performed on (default: random)
+$params['q']                             = (string) Query in the Lucene query string syntax
+$params['routing']                       = (list) A comma-separated list of specific routing values
+$params['scroll']                        = (time) Specify how long a consistent view of the index should be maintained for scrolled search
+$params['search_type']                   = (enum) Search operation type (Options = query_then_fetch,dfs_query_then_fetch)
+$params['size']                          = (number) Number of hits to return (default: 10)
+$params['sort']                          = (list) A comma-separated list of <field>:<direction> pairs
+$params['_source']                       = (list) True or false to return the _source field or not, or a list of fields to return
+$params['_source_excludes']              = (list) A list of fields to exclude from the returned _source field
+$params['_source_includes']              = (list) A list of fields to extract and return from the _source field
+$params['terminate_after']               = (number) The maximum number of documents to collect for each shard, upon reaching which the query execution will terminate early.
+$params['stats']                         = (list) Specific 'tag' of the request for logging and statistical purposes
+$params['suggest_field']                 = (string) Specify which field to use for suggestions
+$params['suggest_mode']                  = (enum) Specify suggest mode (Options = missing,popular,always) (Default = missing)
+$params['suggest_size']                  = (number) How many suggestions to return in response
+$params['suggest_text']                  = (string) The source text for which the suggestions should be returned
+$params['timeout']                       = (time) Explicit operation timeout
+$params['track_scores']                  = (boolean) Whether to calculate and return scores even if they are not used for sorting
+$params['track_total_hits']              = (boolean) Indicate if the number of documents that match the query should be tracked
+$params['allow_partial_search_results']  = (boolean) Indicate if an error should be returned if there is a partial search failure or timeout (Default = true)
+$params['typed_keys']                    = (boolean) Specify whether aggregation and suggester names should be prefixed by their respective types in the response
+$params['version']                       = (boolean) Specify whether to return document version as part of a hit
+$params['seq_no_primary_term']           = (boolean) Specify whether to return sequence number and primary term of the last modification of each hit
+$params['request_cache']                 = (boolean) Specify if request cache should be used for this request or not, defaults to index level setting
+$params['batched_reduce_size']           = (number) The number of shard results that should be reduced at once on the coordinating node. This value should be used as a protection mechanism to reduce the memory overhead per search request if the potential number of shards in the request can be large. (Default = 512)
+$params['max_concurrent_shard_requests'] = (number) The number of concurrent shard requests per node this search executes concurrently. This value should be used to limit the impact of the search on the cluster in order to limit the number of concurrent shard requests (Default = 5)
+$params['pre_filter_shard_size']         = (number) A threshold that enforces a pre-filter roundtrip to prefilter search shards based on query rewriting if the number of shards the search request expands to exceeds the threshold. This filter roundtrip can limit the number of shards significantly if for instance a shard can not match any documents based on its rewrite method ie. if date filters are mandatory to match but the shard bounds and the query are disjoint.
+$params['rest_total_hits_as_int']        = (boolean) Indicates whether hits.total should be rendered as an integer or an object in the rest search response (Default = false)
+$params['body']                          = (array) The search definition using the Query DSL</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_search">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="searchShards" id="_searchShards">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1047-1069" title="Go to source code">searchShards</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['index']              = (list) A comma-separated list of index names to search; use `_all` or empty string to…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['index']              = (list) A comma-separated list of index names to search; use <code>_all</code> or empty string to perform the operation on all indices
+$params['preference']         = (string) Specify the node or shard the operation should be performed on (default: random)
+$params['routing']            = (string) Specific routing value
+$params['local']              = (boolean) Return local information, do not retrieve the state from cluster manager node (default: false)
+$params['ignore_unavailable'] = (boolean) Whether specified concrete indices should be ignored when unavailable (missing or closed)
+$params['allow_no_indices']   = (boolean) Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes <code>_all</code> string or when no indices have been specified)
+$params['expand_wildcards']   = (enum) Whether to expand wildcard expression to concrete indices that are open, closed or both. (Options = open,closed,hidden,none,all) (Default = open)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_searchShards">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="searchTemplate" id="_searchTemplate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1070-1102" title="Go to source code">searchTemplate</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['index']                   = (list) A comma-separated list of index names to search; use `_all` or empty string…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['index']                   = (list) A comma-separated list of index names to search; use <code>_all</code> or empty string to perform the operation on all indices
+$params['ignore_unavailable']      = (boolean) Whether specified concrete indices should be ignored when unavailable (missing or closed)
+$params['ignore_throttled']        = (boolean) Whether specified concrete, expanded or aliased indices should be ignored when throttled
+$params['allow_no_indices']        = (boolean) Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes <code>_all</code> string or when no indices have been specified)
+$params['expand_wildcards']        = (enum) Whether to expand wildcard expression to concrete indices that are open, closed or both. (Options = open,closed,hidden,none,all) (Default = open)
+$params['preference']              = (string) Specify the node or shard the operation should be performed on (default: random)
+$params['routing']                 = (list) A comma-separated list of specific routing values
+$params['scroll']                  = (time) Specify how long a consistent view of the index should be maintained for scrolled search
+$params['search_type']             = (enum) Search operation type (Options = query_then_fetch,query_and_fetch,dfs_query_then_fetch,dfs_query_and_fetch)
+$params['explain']                 = (boolean) Specify whether to return detailed information about score computation as part of a hit
+$params['profile']                 = (boolean) Specify whether to profile the query execution
+$params['typed_keys']              = (boolean) Specify whether aggregation and suggester names should be prefixed by their respective types in the response
+$params['rest_total_hits_as_int']  = (boolean) Indicates whether hits.total should be rendered as an integer or an object in the rest search response (Default = false)
+$params['ccs_minimize_roundtrips'] = (boolean) Indicates whether network round-trips should be minimized as part of cross-cluster search requests execution (Default = true)
+$params['body']                    = (array) The search definition template and its params (Required)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_searchTemplate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="termvectors" id="_termvectors">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1103-1136" title="Go to source code">termvectors</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['index']            = (string) The index in which the document resides. (Required)
+$params['id']               …
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['index']            = (string) The index in which the document resides. (Required)
+$params['id']               = (string) The id of the document, when not specified a doc param should be supplied.
+$params['term_statistics']  = (boolean) Specifies if total term frequency and document frequency should be returned. (Default = false)
+$params['field_statistics'] = (boolean) Specifies if document count, sum of document frequencies and sum of total term frequencies should be returned. (Default = true)
+$params['fields']           = (list) A comma-separated list of fields to return.
+$params['offsets']          = (boolean) Specifies if term offsets should be returned. (Default = true)
+$params['positions']        = (boolean) Specifies if term positions should be returned. (Default = true)
+$params['payloads']         = (boolean) Specifies if term payloads should be returned. (Default = true)
+$params['preference']       = (string) Specify the node or shard the operation should be performed on (default: random).
+$params['routing']          = (string) Specific routing value.
+$params['realtime']         = (boolean) Specifies if request is real-time as opposed to near-real-time (default: true).
+$params['version']          = (number) Explicit version number for concurrency control
+$params['version_type']     = (enum) Specific version type (Options = internal,external,external_gte,force)
+$params['body']             = (array) Define parameters and or supply a document to get termvectors for. See documentation.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_termvectors">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="update" id="_update">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1137-1171" title="Go to source code">update</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['id']                     = (string) Document ID (Required)
+$params['index']                  = (string) The…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['id']                     = (string) Document ID (Required)
+$params['index']                  = (string) The name of the index (Required)
+$params['wait_for_active_shards'] = (string) Sets the number of shard copies that must be active before proceeding with the update operation. Defaults to 1, meaning the primary shard only. Set to <code>all</code> for all shard copies, otherwise set to any non-negative value less than or equal to the total number of copies for the shard (number of replicas + 1)
+$params['_source']                = (list) True or false to return the _source field or not, or a list of fields to return
+$params['_source_excludes']       = (list) A list of fields to exclude from the returned _source field
+$params['_source_includes']       = (list) A list of fields to extract and return from the _source field
+$params['lang']                   = (string) The script language (default: painless)
+$params['refresh']                = (enum) If <code>true</code> then refresh the affected shards to make this operation visible to search, if <code>wait_for</code> then wait for a refresh to make this operation visible to search, if <code>false</code> (the default) then do nothing with refreshes. (Options = true,false,wait_for)
+$params['retry_on_conflict']      = (number) Specify how many times should the operation be retried when a conflict occurs (default: 0)
+$params['routing']                = (string) Specific routing value
+$params['timeout']                = (time) Explicit operation timeout
+$params['if_seq_no']              = (number) only perform the update operation if the last operation that has changed the document has the specified sequence number
+$params['if_primary_term']        = (number) only perform the update operation if the last operation that has changed the document has the specified primary term
+$params['require_alias']          = (boolean) When true, requires destination is an alias. Default is false
+$params['body']                   = (array) The request definition requires either <code>script</code> or partial <code>doc</code> (Required)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_update">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updateByQuery" id="_updateByQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1172-1226" title="Go to source code">updateByQuery</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['index']                  = (list) A comma-separated list of index names to search; use `_all` or empty string…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['index']                  = (list) A comma-separated list of index names to search; use <code>_all</code> or empty string to perform the operation on all indices (Required)
+$params['analyzer']               = (string) The analyzer to use for the query string
+$params['analyze_wildcard']       = (boolean) Specify whether wildcard and prefix queries should be analyzed (default: false)
+$params['default_operator']       = (enum) The default operator for query string query (AND or OR) (Options = AND,OR) (Default = OR)
+$params['df']                     = (string) The field to use as default where no field prefix is given in the query string
+$params['from']                   = (number) Starting offset (default: 0)
+$params['ignore_unavailable']     = (boolean) Whether specified concrete indices should be ignored when unavailable (missing or closed)
+$params['allow_no_indices']       = (boolean) Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes <code>_all</code> string or when no indices have been specified)
+$params['conflicts']              = (enum) What to do when the update by query hits version conflicts? (Options = abort,proceed) (Default = abort)
+$params['expand_wildcards']       = (enum) Whether to expand wildcard expression to concrete indices that are open, closed or both. (Options = open,closed,hidden,none,all) (Default = open)
+$params['lenient']                = (boolean) Specify whether format-based query failures (such as providing text to a numeric field) should be ignored
+$params['pipeline']               = (string) Ingest pipeline to set on index requests made by this action. (default: none)
+$params['preference']             = (string) Specify the node or shard the operation should be performed on (default: random)
+$params['q']                      = (string) Query in the Lucene query string syntax
+$params['routing']                = (list) A comma-separated list of specific routing values
+$params['scroll']                 = (time) Specify how long a consistent view of the index should be maintained for scrolled search
+$params['search_type']            = (enum) Search operation type (Options = query_then_fetch,dfs_query_then_fetch)
+$params['search_timeout']         = (time) Explicit timeout for each search request. Defaults to no timeout.
+$params['size']                   = (number) Deprecated, please use <code>max_docs</code> instead
+$params['max_docs']               = (number) Maximum number of documents to process (default: all documents)
+$params['sort']                   = (list) A comma-separated list of <field>:<direction> pairs
+$params['_source']                = (list) True or false to return the _source field or not, or a list of fields to return
+$params['_source_excludes']       = (list) A list of fields to exclude from the returned _source field
+$params['_source_includes']       = (list) A list of fields to extract and return from the _source field
+$params['terminate_after']        = (number) The maximum number of documents to collect for each shard, upon reaching which the query execution will terminate early.
+$params['stats']                  = (list) Specific 'tag' of the request for logging and statistical purposes
+$params['version']                = (boolean) Specify whether to return document version as part of a hit
+$params['version_type']           = (boolean) Should the document increment the version number (internal) on hit or not (reindex)
+$params['request_cache']          = (boolean) Specify if request cache should be used for this request or not, defaults to index level setting
+$params['refresh']                = (boolean) Should the affected indexes be refreshed?
+$params['timeout']                = (time) Time each individual bulk request should wait for shards that are unavailable. (Default = 1m)
+$params['wait_for_active_shards'] = (string) Sets the number of shard copies that must be active before proceeding with the update by query operation. Defaults to 1, meaning the primary shard only. Set to <code>all</code> for all shard copies, otherwise set to any non-negative value less than or equal to the total number of copies for the shard (number of replicas + 1)
+$params['scroll_size']            = (number) Size on the scroll request powering the update by query (Default = 100)
+$params['wait_for_completion']    = (boolean) Should the request should block until the update by query operation is complete. (Default = true)
+$params['requests_per_second']    = (number) The throttle to set on this request in sub-requests per second. -1 means no throttle. (Default = 0)
+$params['slices']                 = (number|string) The number of slices this task should be divided into. Defaults to 1, meaning the task isn't sliced into subtasks. Can be set to <code>auto</code>. (Default = 1)
+$params['body']                   = (array) The search definition using the Query DSL</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_updateByQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updateByQueryRethrottle" id="_updateByQueryRethrottle">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1227-1244" title="Go to source code">updateByQueryRethrottle</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['task_id']             = (string) The task id to rethrottle
+$params['requests_per_second'] = (number) The…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['task_id']             = (string) The task id to rethrottle
+$params['requests_per_second'] = (number) The throttle to set on this request in floating sub-requests per second. -1 means set no throttle. (Required)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_updateByQueryRethrottle">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="closePointInTime" id="_closePointInTime">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1245-1261" title="Go to source code">closePointInTime</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['body'] = (array) a point-in-time id to close
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['body'] = (array) a point-in-time id to close</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_closePointInTime">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="openPointInTime" id="_openPointInTime">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1262-1283" title="Go to source code">openPointInTime</a>(<span>array <var>$params</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		$params['index']              = (list) A comma-separated list of index names to open point in time; use `_all` or empty…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>$params['index']              = (list) A comma-separated list of index names to open point in time; use <code>_all</code> or empty string to perform the operation on all indices
+$params['preference']         = (string) Specify the node or shard the operation should be performed on (default: random)
+$params['routing']            = (string) Specific routing value
+$params['ignore_unavailable'] = (boolean) Whether specified concrete indices should be ignored when unavailable (missing or closed)
+$params['expand_wildcards']   = (enum) Whether to expand wildcard expression to concrete indices that are open, closed or both. (Options = open,closed,hidden,none,all) (Default = open)
+$params['keep_alive']         = (string) Specific the time to live for the point in time</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Associative array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_openPointInTime">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cat" id="_cat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1284-1287" title="Go to source code">cat</a>(): <a href="OpenSearch.Namespaces.CatNamespace.html"><span title="OpenSearch\Namespaces\CatNamespace">CatNamespace</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cluster" id="_cluster">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1288-1291" title="Go to source code">cluster</a>(): <a href="OpenSearch.Namespaces.ClusterNamespace.html"><span title="OpenSearch\Namespaces\ClusterNamespace">ClusterNamespace</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cluster">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="danglingIndices" id="_danglingIndices">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1292-1295" title="Go to source code">danglingIndices</a>(): <a href="OpenSearch.Namespaces.DanglingIndicesNamespace.html"><span title="OpenSearch\Namespaces\DanglingIndicesNamespace">DanglingIndicesNamespace</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_danglingIndices">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="indices" id="_indices">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1296-1299" title="Go to source code">indices</a>(): <a href="OpenSearch.Namespaces.IndicesNamespace.html"><span title="OpenSearch\Namespaces\IndicesNamespace">IndicesNamespace</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_indices">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ingest" id="_ingest">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1300-1303" title="Go to source code">ingest</a>(): <a href="OpenSearch.Namespaces.IngestNamespace.html"><span title="OpenSearch\Namespaces\IngestNamespace">IngestNamespace</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ingest">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="nodes" id="_nodes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1304-1307" title="Go to source code">nodes</a>(): <a href="OpenSearch.Namespaces.NodesNamespace.html"><span title="OpenSearch\Namespaces\NodesNamespace">NodesNamespace</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_nodes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="snapshot" id="_snapshot">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1308-1311" title="Go to source code">snapshot</a>(): <a href="OpenSearch.Namespaces.SnapshotNamespace.html"><span title="OpenSearch\Namespaces\SnapshotNamespace">SnapshotNamespace</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_snapshot">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="tasks" id="_tasks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1312-1315" title="Go to source code">tasks</a>(): <a href="OpenSearch.Namespaces.TasksNamespace.html"><span title="OpenSearch\Namespaces\TasksNamespace">TasksNamespace</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_tasks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="asyncSearch" id="_asyncSearch">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1316-1319" title="Go to source code">asyncSearch</a>(): <a href="OpenSearch.Namespaces.AsyncSearchNamespace.html"><span title="OpenSearch\Namespaces\AsyncSearchNamespace">AsyncSearchNamespace</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_asyncSearch">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dataFrameTransformDeprecated" id="_dataFrameTransformDeprecated">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1320-1323" title="Go to source code">dataFrameTransformDeprecated</a>(): <a href="OpenSearch.Namespaces.DataFrameTransformDeprecatedNamespace.html"><span title="OpenSearch\Namespaces\DataFrameTransformDeprecatedNamespace">DataFrameTransformDeprecatedNamespace</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dataFrameTransformDeprecated">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="monitoring" id="_monitoring">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1324-1327" title="Go to source code">monitoring</a>(): <a href="OpenSearch.Namespaces.MonitoringNamespace.html"><span title="OpenSearch\Namespaces\MonitoringNamespace">MonitoringNamespace</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_monitoring">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="searchableSnapshots" id="_searchableSnapshots">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1328-1331" title="Go to source code">searchableSnapshots</a>(): <a href="OpenSearch.Namespaces.SearchableSnapshotsNamespace.html"><span title="OpenSearch\Namespaces\SearchableSnapshotsNamespace">SearchableSnapshotsNamespace</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_searchableSnapshots">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="security" id="_security">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1333-1336" title="Go to source code">security</a>(): <a href="OpenSearch.Namespaces.SecurityNamespace.html"><span title="OpenSearch\Namespaces\SecurityNamespace">SecurityNamespace</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_security">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ssl" id="_ssl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1338-1341" title="Go to source code">ssl</a>(): <a href="OpenSearch.Namespaces.SslNamespace.html"><span title="OpenSearch\Namespaces\SslNamespace">SslNamespace</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ssl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sql" id="_sql">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1343-1346" title="Go to source code">sql</a>(): <a href="OpenSearch.Namespaces.SqlNamespace.html"><span title="OpenSearch\Namespaces\SqlNamespace">SqlNamespace</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sql">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__call" id="___call">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1348-1360" title="Go to source code">__call</a>(<span>string <var>$name</var></span>, <span>array <var>$arguments</var></span>): object</code>
+
+
+	<div class="expandable-collapsedView">
+		Catchall for registered namespaces
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Catchall for registered namespaces</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="OpenSearch.Common.Exceptions.BadMethodCallException.html"><span>OpenSearch\Common\Exceptions\BadMethodCallException</span></a></code>&nbsp;</td>
+										<td><p>if the namespace cannot be found</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___call">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="extractArgument" id="_extractArgument">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Client.html#1362-1377" title="Go to source code">extractArgument</a>(<span>array &amp;<var>$params</var></span>, <span>string <var>$arg</var></span>): null|mixed</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_extractArgument">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="VERSION" id="VERSION">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-OpenSearch.Client.html#56" title="Go to source code">VERSION</a> = <span class="php-str">'7.10.0'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#VERSION">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="transport" id="$transport">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Transport.html"><span title="OpenSearch\Transport">Transport</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#58-61" title="Go to source code">$transport</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$transport">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="params" id="$params">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#63-66" title="Go to source code">$params</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$params">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="endpoints" id="$endpoints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">callable</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#68-71" title="Go to source code">$endpoints</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$endpoints">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="registeredNamespaces" id="$registeredNamespaces">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Namespaces.NamespaceBuilderInterface.html"><span title="OpenSearch\Namespaces\NamespaceBuilderInterface">NamespaceBuilderInterface</span></a>[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#73-76" title="Go to source code">$registeredNamespaces</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$registeredNamespaces">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cat" id="$cat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Namespaces.CatNamespace.html"><span title="OpenSearch\Namespaces\CatNamespace">CatNamespace</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#78-81" title="Go to source code">$cat</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$cat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cluster" id="$cluster">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Namespaces.ClusterNamespace.html"><span title="OpenSearch\Namespaces\ClusterNamespace">ClusterNamespace</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#83-86" title="Go to source code">$cluster</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$cluster">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="danglingIndices" id="$danglingIndices">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Namespaces.DanglingIndicesNamespace.html"><span title="OpenSearch\Namespaces\DanglingIndicesNamespace">DanglingIndicesNamespace</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#88-91" title="Go to source code">$danglingIndices</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$danglingIndices">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="indices" id="$indices">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Namespaces.IndicesNamespace.html"><span title="OpenSearch\Namespaces\IndicesNamespace">IndicesNamespace</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#93-96" title="Go to source code">$indices</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$indices">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ingest" id="$ingest">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Namespaces.IngestNamespace.html"><span title="OpenSearch\Namespaces\IngestNamespace">IngestNamespace</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#98-101" title="Go to source code">$ingest</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$ingest">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="nodes" id="$nodes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Namespaces.NodesNamespace.html"><span title="OpenSearch\Namespaces\NodesNamespace">NodesNamespace</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#103-106" title="Go to source code">$nodes</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$nodes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="snapshot" id="$snapshot">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Namespaces.SnapshotNamespace.html"><span title="OpenSearch\Namespaces\SnapshotNamespace">SnapshotNamespace</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#108-111" title="Go to source code">$snapshot</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$snapshot">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="tasks" id="$tasks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Namespaces.TasksNamespace.html"><span title="OpenSearch\Namespaces\TasksNamespace">TasksNamespace</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#113-116" title="Go to source code">$tasks</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$tasks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="asyncSearch" id="$asyncSearch">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Namespaces.AsyncSearchNamespace.html"><span title="OpenSearch\Namespaces\AsyncSearchNamespace">AsyncSearchNamespace</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#118-121" title="Go to source code">$asyncSearch</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$asyncSearch">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dataFrameTransformDeprecated" id="$dataFrameTransformDeprecated">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Namespaces.DataFrameTransformDeprecatedNamespace.html"><span title="OpenSearch\Namespaces\DataFrameTransformDeprecatedNamespace">DataFrameTransformDeprecatedNamespace</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#123-126" title="Go to source code">$dataFrameTransformDeprecated</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$dataFrameTransformDeprecated">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="monitoring" id="$monitoring">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Namespaces.MonitoringNamespace.html"><span title="OpenSearch\Namespaces\MonitoringNamespace">MonitoringNamespace</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#128-131" title="Go to source code">$monitoring</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$monitoring">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="searchableSnapshots" id="$searchableSnapshots">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Namespaces.SearchableSnapshotsNamespace.html"><span title="OpenSearch\Namespaces\SearchableSnapshotsNamespace">SearchableSnapshotsNamespace</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#133-136" title="Go to source code">$searchableSnapshots</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$searchableSnapshots">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="security" id="$security">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Namespaces.SecurityNamespace.html"><span title="OpenSearch\Namespaces\SecurityNamespace">SecurityNamespace</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#138-141" title="Go to source code">$security</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$security">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ssl" id="$ssl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Namespaces.SslNamespace.html"><span title="OpenSearch\Namespaces\SslNamespace">SslNamespace</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#143-146" title="Go to source code">$ssl</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$ssl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sql" id="$sql">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Namespaces.SqlNamespace.html"><span title="OpenSearch\Namespaces\SqlNamespace">SqlNamespace</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Client.html#148-151" title="Go to source code">$sql</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$sql">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.3</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

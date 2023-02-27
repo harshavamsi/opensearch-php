@@ -1,0 +1,366 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Interface GuzzleHttp\Ring\Future\FutureInterface |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-GuzzleHttp.html">GuzzleHttp</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-GuzzleHttp.Ring.html">Ring</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-GuzzleHttp.Ring.Future.html">Future</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.html">OpenSearch</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Common.html">Common</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.ConnectionPool.html">ConnectionPool</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Connections.html">Connections</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.html">Endpoints</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Handlers.html">Handlers</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Helper.html">Helper</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Namespaces.html">Namespaces</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Serializers.html">Serializers</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="GuzzleHttp.Ring.Future.CompletedFutureArray.html">
+							CompletedFutureArray
+						</a>
+					</li>
+					<li>
+						<a href="GuzzleHttp.Ring.Future.CompletedFutureValue.html">
+							CompletedFutureValue
+						</a>
+					</li>
+					<li>
+						<a href="GuzzleHttp.Ring.Future.FutureArray.html">
+							FutureArray
+						</a>
+					</li>
+			</ul>
+		</div>
+
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="GuzzleHttp.Ring.Future.FutureArrayInterface.html">
+							FutureArrayInterface
+						</a>
+					</li>
+					<li class="active">
+						<a href="GuzzleHttp.Ring.Future.FutureInterface.html">
+							FutureInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="GuzzleHttp.Ring.Future.MagicFutureTrait.html">
+							MagicFutureTrait
+						</a>
+					</li>
+			</ul>
+		</div>
+
+
+
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-GuzzleHttp.Ring.Future.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="GuzzleHttp.Ring.Future.FutureInterface.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="namespace-GuzzleHttp.html">GuzzleHttp</a>\<a href="namespace-GuzzleHttp.Ring.html">Ring</a>\<a href="namespace-GuzzleHttp.Ring.Future.html">Future</a>\<a href="GuzzleHttp.Ring.Future.FutureInterface.html">FutureInterface</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="React.Promise.PromiseInterface.html"><span title="React\Promise\PromiseInterface">PromiseInterface</span></a>, <a href="React.Promise.PromisorInterface.html"><span title="React\Promise\PromisorInterface">PromisorInterface</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Represents the result of a computation that may not have completed yet.</p>
+<p>You can use the future in a blocking manner using the wait() function, or
+you can use a promise from the future to receive the result when the future
+has been resolved.</p>
+<p>When the future is dereferenced using wait(), the result of the computation
+is cached and returned for subsequent calls to wait(). If the result of the
+computation has not yet completed when wait() is called, the call to wait()
+will block until the future has completed.</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">GuzzleHttp\Ring\Future\FutureInterface</span></b>
+		extends
+			<a href="React.Promise.PromiseInterface.html"><span title="React\Promise\PromiseInterface">PromiseInterface</span></a>, 
+			<a href="React.Promise.PromisorInterface.html"><span title="React\Promise\PromisorInterface">PromisorInterface</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="GuzzleHttp.Ring.Future.CompletedFutureValue.html"><span>GuzzleHttp\Ring\Future\CompletedFutureValue</span></a>
+
+		implements
+			<b><span class="active" title="GuzzleHttp\Ring\Future\FutureInterface">FutureInterface</span></b>
+
+	<ul class="classTree">
+	<li>
+<a href="GuzzleHttp.Ring.Future.CompletedFutureArray.html"><span>GuzzleHttp\Ring\Future\CompletedFutureArray</span></a>
+
+		implements
+			<a href="GuzzleHttp.Ring.Future.FutureArrayInterface.html"><span title="GuzzleHttp\Ring\Future\FutureArrayInterface">FutureArrayInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="GuzzleHttp.Ring.Future.FutureArrayInterface.html"><span>GuzzleHttp\Ring\Future\FutureArrayInterface</span></a>
+		extends
+			<b><span class="active" title="GuzzleHttp\Ring\Future\FutureInterface">FutureInterface</span></b>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="GuzzleHttp.Ring.Future.FutureArray.html"><span>GuzzleHttp\Ring\Future\FutureArray</span></a>
+
+		implements
+			<a href="GuzzleHttp.Ring.Future.FutureArrayInterface.html"><span title="GuzzleHttp\Ring\Future\FutureArrayInterface">FutureArrayInterface</span></a>
+
+		uses
+			<a href="GuzzleHttp.Ring.Future.MagicFutureTrait.html"><span title="GuzzleHttp\Ring\Future\MagicFutureTrait">MagicFutureTrait</span></a>
+	</li>
+	<li>
+<a href="GuzzleHttp.Ring.Future.CompletedFutureArray.html"><span>GuzzleHttp\Ring\Future\CompletedFutureArray</span></a>
+
+		implements
+			<a href="GuzzleHttp.Ring.Future.FutureArrayInterface.html"><span title="GuzzleHttp\Ring\Future\FutureArrayInterface">FutureArrayInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="wait" id="_wait">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wait(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the result of the future either from cache or by blocking until
+it is complete.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the result of the future either from cache or by blocking until
+it is complete.</p>
+<p>This method must block until the future has a result or is cancelled.
+Throwing an exception in the wait() method will mark the future as
+realized and will throw the exception each time wait() is called.
+Throwing an instance of GuzzleHttp\Ring\CancelledException will mark
+the future as realized, will not throw immediately, but will throw the
+exception if the future's wait() method is called again.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="GuzzleHttp.Ring.Future.CompletedFutureValue.html#_wait">						<code>GuzzleHttp\Ring\Future\CompletedFutureValue::wait()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wait">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cancel" id="_cancel">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>cancel()</code>
+
+
+	<div class="expandable-collapsedView">
+		Cancels the future, if possible.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Cancels the future, if possible.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="GuzzleHttp.Ring.Future.CompletedFutureValue.html#_cancel">						<code>GuzzleHttp\Ring\Future\CompletedFutureValue::cancel()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cancel">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="React.Promise.PromiseInterface.html"><span>React\Promise\PromiseInterface</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="React.Promise.PromiseInterface.html#_then">then()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="React.Promise.PromisorInterface.html"><span>React\Promise\PromisorInterface</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="React.Promise.PromisorInterface.html#_promise">promise()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.3</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

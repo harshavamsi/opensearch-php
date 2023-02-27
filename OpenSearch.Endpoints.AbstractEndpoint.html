@@ -1,0 +1,3438 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Class OpenSearch\Endpoints\AbstractEndpoint |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-OpenSearch.html">OpenSearch</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Common.html">Common</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.ConnectionPool.html">ConnectionPool</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Connections.html">Connections</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-OpenSearch.Endpoints.html">Endpoints</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.AsyncSearch.html">AsyncSearch</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.Cat.html">Cat</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.Cluster.html">Cluster</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.DanglingIndices.html">DanglingIndices</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.DataFrameTransformDeprecated.html">DataFrameTransformDeprecated</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.Indices.html">Indices</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.Ingest.html">Ingest</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.Monitoring.html">Monitoring</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.Nodes.html">Nodes</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.SearchableSnapshots.html">SearchableSnapshots</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.Security.html">Security</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.Snapshot.html">Snapshot</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.Sql.html">Sql</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.Ssl.html">Ssl</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Endpoints.Tasks.html">Tasks</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Handlers.html">Handlers</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Helper.html">Helper</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Namespaces.html">Namespaces</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-OpenSearch.Serializers.html">Serializers</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="OpenSearch.Endpoints.AbstractEndpoint.html">
+							AbstractEndpoint
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.Bulk.html">
+							Bulk
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.ClearScroll.html">
+							ClearScroll
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.ClosePointInTime.html">
+							ClosePointInTime
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.Count.html">
+							Count
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.Create.html">
+							Create
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.Delete.html">
+							Delete
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.DeleteByQuery.html">
+							DeleteByQuery
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.DeleteByQueryRethrottle.html">
+							DeleteByQueryRethrottle
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.DeleteScript.html">
+							DeleteScript
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.Exists.html">
+							Exists
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.ExistsSource.html">
+							ExistsSource
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.Explain.html">
+							Explain
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.FieldCaps.html">
+							FieldCaps
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.Get.html">
+							Get
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.GetScript.html">
+							GetScript
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.GetScriptContext.html">
+							GetScriptContext
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.GetScriptLanguages.html">
+							GetScriptLanguages
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.GetSource.html">
+							GetSource
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.Index.html">
+							Index
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.Info.html">
+							Info
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.Mget.html">
+							Mget
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.Msearch.html">
+							Msearch
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.MsearchTemplate.html">
+							MsearchTemplate
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.MTermVectors.html">
+							MTermVectors
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.OpenPointInTime.html">
+							OpenPointInTime
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.Ping.html">
+							Ping
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.PutScript.html">
+							PutScript
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.RankEval.html">
+							RankEval
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.Reindex.html">
+							Reindex
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.ReindexRethrottle.html">
+							ReindexRethrottle
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.RenderSearchTemplate.html">
+							RenderSearchTemplate
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.ScriptsPainlessExecute.html">
+							ScriptsPainlessExecute
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.Scroll.html">
+							Scroll
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.Search.html">
+							Search
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.SearchShards.html">
+							SearchShards
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.SearchTemplate.html">
+							SearchTemplate
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.TermVectors.html">
+							TermVectors
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.Update.html">
+							Update
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.UpdateByQuery.html">
+							UpdateByQuery
+						</a>
+					</li>
+					<li>
+						<a href="OpenSearch.Endpoints.UpdateByQueryRethrottle.html">
+							UpdateByQueryRethrottle
+						</a>
+					</li>
+			</ul>
+		</div>
+
+
+
+
+
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-OpenSearch.Endpoints.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="OpenSearch.Endpoints.AbstractEndpoint.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-OpenSearch.html">OpenSearch</a>\<a href="namespace-OpenSearch.Endpoints.html">Endpoints</a>\<a href="OpenSearch.Endpoints.AbstractEndpoint.html">AbstractEndpoint</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+			<tr><th><code>abstract</code></th></tr>
+
+
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">OpenSearch\Endpoints\AbstractEndpoint</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="OpenSearch.Endpoints.Search.html"><span>OpenSearch\Endpoints\Search</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.Restore.html"><span>OpenSearch\Endpoints\Snapshot\Restore</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.Status.html"><span>OpenSearch\Endpoints\Snapshot\Status</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.DeleteRepository.html"><span>OpenSearch\Endpoints\Snapshot\DeleteRepository</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.GetRepository.html"><span>OpenSearch\Endpoints\Snapshot\GetRepository</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.Delete.html"><span>OpenSearch\Endpoints\Snapshot\Delete</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.Create.html"><span>OpenSearch\Endpoints\Snapshot\Create</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.CreateRepository.html"><span>OpenSearch\Endpoints\Snapshot\CreateRepository</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.CloneSnapshot.html"><span>OpenSearch\Endpoints\Snapshot\CloneSnapshot</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.VerifyRepository.html"><span>OpenSearch\Endpoints\Snapshot\VerifyRepository</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.CleanupRepository.html"><span>OpenSearch\Endpoints\Snapshot\CleanupRepository</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Snapshot.Get.html"><span>OpenSearch\Endpoints\Snapshot\Get</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.MsearchTemplate.html"><span>OpenSearch\Endpoints\MsearchTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.AsyncSearch.Delete.html"><span>OpenSearch\Endpoints\AsyncSearch\Delete</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.AsyncSearch.Submit.html"><span>OpenSearch\Endpoints\AsyncSearch\Submit</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.AsyncSearch.Get.html"><span>OpenSearch\Endpoints\AsyncSearch\Get</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Tasks.Cancel.html"><span>OpenSearch\Endpoints\Tasks\Cancel</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Tasks.ListTasks.html"><span>OpenSearch\Endpoints\Tasks\ListTasks</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Tasks.Get.html"><span>OpenSearch\Endpoints\Tasks\Get</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Sql.CursorClose.html"><span>OpenSearch\Endpoints\Sql\CursorClose</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Sql.Explain.html"><span>OpenSearch\Endpoints\Sql\Explain</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Sql.Query.html"><span>OpenSearch\Endpoints\Sql\Query</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Ssl.Certificates.html"><span>OpenSearch\Endpoints\Ssl\Certificates</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.ClearScroll.html"><span>OpenSearch\Endpoints\ClearScroll</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Nodes.html"><span>OpenSearch\Endpoints\Cat\Nodes</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Health.html"><span>OpenSearch\Endpoints\Cat\Health</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Snapshots.html"><span>OpenSearch\Endpoints\Cat\Snapshots</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Segments.html"><span>OpenSearch\Endpoints\Cat\Segments</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.PendingTasks.html"><span>OpenSearch\Endpoints\Cat\PendingTasks</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Transforms.html"><span>OpenSearch\Endpoints\Cat\Transforms</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Repositories.html"><span>OpenSearch\Endpoints\Cat\Repositories</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Count.html"><span>OpenSearch\Endpoints\Cat\Count</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Fielddata.html"><span>OpenSearch\Endpoints\Cat\Fielddata</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.NodeAttrs.html"><span>OpenSearch\Endpoints\Cat\NodeAttrs</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Indices.html"><span>OpenSearch\Endpoints\Cat\Indices</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.ClusterManager.html"><span>OpenSearch\Endpoints\Cat\ClusterManager</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.ThreadPool.html"><span>OpenSearch\Endpoints\Cat\ThreadPool</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Recovery.html"><span>OpenSearch\Endpoints\Cat\Recovery</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Aliases.html"><span>OpenSearch\Endpoints\Cat\Aliases</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Shards.html"><span>OpenSearch\Endpoints\Cat\Shards</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Help.html"><span>OpenSearch\Endpoints\Cat\Help</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Master.html"><span class="deprecated">OpenSearch\Endpoints\Cat\Master</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Allocation.html"><span>OpenSearch\Endpoints\Cat\Allocation</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Tasks.html"><span>OpenSearch\Endpoints\Cat\Tasks</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Plugins.html"><span>OpenSearch\Endpoints\Cat\Plugins</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cat.Templates.html"><span>OpenSearch\Endpoints\Cat\Templates</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.TermVectors.html"><span>OpenSearch\Endpoints\TermVectors</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.ScriptsPainlessExecute.html"><span>OpenSearch\Endpoints\ScriptsPainlessExecute</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.RankEval.html"><span>OpenSearch\Endpoints\RankEval</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.RenderSearchTemplate.html"><span>OpenSearch\Endpoints\RenderSearchTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Scroll.html"><span>OpenSearch\Endpoints\Scroll</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.UpdateByQuery.html"><span>OpenSearch\Endpoints\UpdateByQuery</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.FieldCaps.html"><span>OpenSearch\Endpoints\FieldCaps</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.GetSource.html"><span>OpenSearch\Endpoints\GetSource</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Bulk.html"><span>OpenSearch\Endpoints\Bulk</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Mget.html"><span>OpenSearch\Endpoints\Mget</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Ingest.DeletePipeline.html"><span>OpenSearch\Endpoints\Ingest\DeletePipeline</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Ingest.Simulate.html"><span>OpenSearch\Endpoints\Ingest\Simulate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Ingest.ProcessorGrok.html"><span>OpenSearch\Endpoints\Ingest\ProcessorGrok</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Ingest.PutPipeline.html"><span>OpenSearch\Endpoints\Ingest\PutPipeline</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Ingest.GetPipeline.html"><span>OpenSearch\Endpoints\Ingest\GetPipeline</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Nodes.ReloadSecureSettings.html"><span>OpenSearch\Endpoints\Nodes\ReloadSecureSettings</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Nodes.Stats.html"><span>OpenSearch\Endpoints\Nodes\Stats</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Nodes.HotThreads.html"><span>OpenSearch\Endpoints\Nodes\HotThreads</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Nodes.Usage.html"><span>OpenSearch\Endpoints\Nodes\Usage</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Nodes.Info.html"><span>OpenSearch\Endpoints\Nodes\Info</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.GetScriptLanguages.html"><span>OpenSearch\Endpoints\GetScriptLanguages</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.GetScript.html"><span>OpenSearch\Endpoints\GetScript</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Monitoring.Bulk.html"><span>OpenSearch\Endpoints\Monitoring\Bulk</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.GetScriptContext.html"><span>OpenSearch\Endpoints\GetScriptContext</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Exists.html"><span>OpenSearch\Endpoints\Exists</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Index.html"><span>OpenSearch\Endpoints\Index</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Ping.html"><span>OpenSearch\Endpoints\Ping</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.PatchRoleMappings.html"><span>OpenSearch\Endpoints\Security\PatchRoleMappings</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.GetActionGroups.html"><span>OpenSearch\Endpoints\Security\GetActionGroups</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.GetConfig.html"><span>OpenSearch\Endpoints\Security\GetConfig</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.CreateTenant.html"><span>OpenSearch\Endpoints\Security\CreateTenant</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.GetAccount.html"><span>OpenSearch\Endpoints\Security\GetAccount</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.CreateActionGroup.html"><span>OpenSearch\Endpoints\Security\CreateActionGroup</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.PatchUsers.html"><span>OpenSearch\Endpoints\Security\PatchUsers</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.DeleteRoleMapping.html"><span>OpenSearch\Endpoints\Security\DeleteRoleMapping</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.GetCertificates.html"><span>OpenSearch\Endpoints\Security\GetCertificates</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.DeleteDistinguishedNames.html"><span>OpenSearch\Endpoints\Security\DeleteDistinguishedNames</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.Health.html"><span>OpenSearch\Endpoints\Security\Health</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.GetTenants.html"><span>OpenSearch\Endpoints\Security\GetTenants</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.UpdateDistinguishedNames.html"><span>OpenSearch\Endpoints\Security\UpdateDistinguishedNames</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.FlushCache.html"><span>OpenSearch\Endpoints\Security\FlushCache</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.CreateRole.html"><span>OpenSearch\Endpoints\Security\CreateRole</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.CreateUser.html"><span>OpenSearch\Endpoints\Security\CreateUser</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.PatchTenants.html"><span>OpenSearch\Endpoints\Security\PatchTenants</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.GetRoleMappings.html"><span>OpenSearch\Endpoints\Security\GetRoleMappings</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.PatchRoles.html"><span>OpenSearch\Endpoints\Security\PatchRoles</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.CreateRoleMapping.html"><span>OpenSearch\Endpoints\Security\CreateRoleMapping</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.PatchActionGroups.html"><span>OpenSearch\Endpoints\Security\PatchActionGroups</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.DeleteUser.html"><span>OpenSearch\Endpoints\Security\DeleteUser</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.DeleteTenant.html"><span>OpenSearch\Endpoints\Security\DeleteTenant</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.GetUsers.html"><span>OpenSearch\Endpoints\Security\GetUsers</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.GetDistinguishedNames.html"><span>OpenSearch\Endpoints\Security\GetDistinguishedNames</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.PatchConfig.html"><span>OpenSearch\Endpoints\Security\PatchConfig</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.DeleteActionGroup.html"><span>OpenSearch\Endpoints\Security\DeleteActionGroup</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.GetRoles.html"><span>OpenSearch\Endpoints\Security\GetRoles</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.ChangePassword.html"><span>OpenSearch\Endpoints\Security\ChangePassword</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.DeleteRole.html"><span>OpenSearch\Endpoints\Security\DeleteRole</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Security.UpdateConfig.html"><span>OpenSearch\Endpoints\Security\UpdateConfig</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.ExistsComponentTemplate.html"><span>OpenSearch\Endpoints\Cluster\ExistsComponentTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.PutComponentTemplate.html"><span>OpenSearch\Endpoints\Cluster\PutComponentTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.Reroute.html"><span>OpenSearch\Endpoints\Cluster\Reroute</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.DeleteVotingConfigExclusions.html"><span>OpenSearch\Endpoints\Cluster\DeleteVotingConfigExclusions</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.Health.html"><span>OpenSearch\Endpoints\Cluster\Health</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.PendingTasks.html"><span>OpenSearch\Endpoints\Cluster\PendingTasks</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.State.html"><span>OpenSearch\Endpoints\Cluster\State</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.AllocationExplain.html"><span>OpenSearch\Endpoints\Cluster\AllocationExplain</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.Stats.html"><span>OpenSearch\Endpoints\Cluster\Stats</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.RemoteInfo.html"><span>OpenSearch\Endpoints\Cluster\RemoteInfo</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.PostVotingConfigExclusions.html"><span>OpenSearch\Endpoints\Cluster\PostVotingConfigExclusions</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.GetComponentTemplate.html"><span>OpenSearch\Endpoints\Cluster\GetComponentTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.PutSettings.html"><span>OpenSearch\Endpoints\Cluster\PutSettings</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.DeleteComponentTemplate.html"><span>OpenSearch\Endpoints\Cluster\DeleteComponentTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Cluster.GetSettings.html"><span>OpenSearch\Endpoints\Cluster\GetSettings</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.PutScript.html"><span>OpenSearch\Endpoints\PutScript</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Count.html"><span>OpenSearch\Endpoints\Count</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DeleteByQueryRethrottle.html"><span>OpenSearch\Endpoints\DeleteByQueryRethrottle</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.DeleteTransform.html"><span>OpenSearch\Endpoints\DataFrameTransformDeprecated\DeleteTransform</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.PreviewTransform.html"><span>OpenSearch\Endpoints\DataFrameTransformDeprecated\PreviewTransform</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.PutTransform.html"><span>OpenSearch\Endpoints\DataFrameTransformDeprecated\PutTransform</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.UpdateTransform.html"><span>OpenSearch\Endpoints\DataFrameTransformDeprecated\UpdateTransform</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.GetTransformStats.html"><span>OpenSearch\Endpoints\DataFrameTransformDeprecated\GetTransformStats</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.StartTransform.html"><span>OpenSearch\Endpoints\DataFrameTransformDeprecated\StartTransform</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.GetTransform.html"><span>OpenSearch\Endpoints\DataFrameTransformDeprecated\GetTransform</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.StopTransform.html"><span>OpenSearch\Endpoints\DataFrameTransformDeprecated\StopTransform</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.ExistsSource.html"><span>OpenSearch\Endpoints\ExistsSource</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DanglingIndices.DeleteDanglingIndex.html"><span>OpenSearch\Endpoints\DanglingIndices\DeleteDanglingIndex</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DanglingIndices.ListDanglingIndices.html"><span>OpenSearch\Endpoints\DanglingIndices\ListDanglingIndices</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DanglingIndices.ImportDanglingIndex.html"><span>OpenSearch\Endpoints\DanglingIndices\ImportDanglingIndex</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Explain.html"><span>OpenSearch\Endpoints\Explain</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.OpenPointInTime.html"><span>OpenSearch\Endpoints\OpenPointInTime</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DeleteScript.html"><span>OpenSearch\Endpoints\DeleteScript</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.UpdateByQueryRethrottle.html"><span>OpenSearch\Endpoints\UpdateByQueryRethrottle</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.SearchShards.html"><span>OpenSearch\Endpoints\SearchShards</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Update.html"><span>OpenSearch\Endpoints\Update</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Delete.html"><span>OpenSearch\Endpoints\Delete</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.DeleteByQuery.html"><span>OpenSearch\Endpoints\DeleteByQuery</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Create.html"><span>OpenSearch\Endpoints\Create</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.Mount.html"><span>OpenSearch\Endpoints\SearchableSnapshots\Mount</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.RepositoryStats.html"><span>OpenSearch\Endpoints\SearchableSnapshots\RepositoryStats</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.ClearCache.html"><span>OpenSearch\Endpoints\SearchableSnapshots\ClearCache</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.Stats.html"><span>OpenSearch\Endpoints\SearchableSnapshots\Stats</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.ClosePointInTime.html"><span>OpenSearch\Endpoints\ClosePointInTime</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.MTermVectors.html"><span>OpenSearch\Endpoints\MTermVectors</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Info.html"><span>OpenSearch\Endpoints\Info</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.ReindexRethrottle.html"><span>OpenSearch\Endpoints\ReindexRethrottle</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.SearchTemplate.html"><span>OpenSearch\Endpoints\SearchTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Msearch.html"><span>OpenSearch\Endpoints\Msearch</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.CreateDataStream.html"><span>OpenSearch\Endpoints\Indices\CreateDataStream</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.ExistsIndexTemplate.html"><span>OpenSearch\Endpoints\Indices\ExistsIndexTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.CloneIndices.html"><span>OpenSearch\Endpoints\Indices\CloneIndices</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.GetAlias.html"><span>OpenSearch\Endpoints\Indices\GetAlias</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.DataStreamsStats.html"><span>OpenSearch\Endpoints\Indices\DataStreamsStats</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.GetIndexTemplate.html"><span>OpenSearch\Endpoints\Indices\GetIndexTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Flush.html"><span>OpenSearch\Endpoints\Indices\Flush</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.ShardStores.html"><span>OpenSearch\Endpoints\Indices\ShardStores</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.PutIndexTemplate.html"><span>OpenSearch\Endpoints\Indices\PutIndexTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.PutTemplate.html"><span>OpenSearch\Endpoints\Indices\PutTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Refresh.html"><span>OpenSearch\Endpoints\Indices\Refresh</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.PutAlias.html"><span>OpenSearch\Endpoints\Indices\PutAlias</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.ExistsTemplate.html"><span>OpenSearch\Endpoints\Indices\ExistsTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.ReloadSearchAnalyzers.html"><span>OpenSearch\Endpoints\Indices\ReloadSearchAnalyzers</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Shrink.html"><span>OpenSearch\Endpoints\Indices\Shrink</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Close.html"><span>OpenSearch\Endpoints\Indices\Close</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.SimulateTemplate.html"><span>OpenSearch\Endpoints\Indices\SimulateTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.ForceMerge.html"><span>OpenSearch\Endpoints\Indices\ForceMerge</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.ClearCache.html"><span>OpenSearch\Endpoints\Indices\ClearCache</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.GetFieldMapping.html"><span>OpenSearch\Endpoints\Indices\GetFieldMapping</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Segments.html"><span>OpenSearch\Endpoints\Indices\Segments</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Exists.html"><span>OpenSearch\Endpoints\Indices\Exists</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.PutMapping.html"><span>OpenSearch\Endpoints\Indices\PutMapping</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.GetUpgrade.html"><span>OpenSearch\Endpoints\Indices\GetUpgrade</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteDataStream.html"><span>OpenSearch\Endpoints\Indices\DeleteDataStream</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.ValidateQuery.html"><span>OpenSearch\Endpoints\Indices\ValidateQuery</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteIndexTemplate.html"><span>OpenSearch\Endpoints\Indices\DeleteIndexTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Rollover.html"><span>OpenSearch\Endpoints\Indices\Rollover</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.ResolveIndex.html"><span>OpenSearch\Endpoints\Indices\ResolveIndex</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.ExistsAlias.html"><span>OpenSearch\Endpoints\Indices\ExistsAlias</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Upgrade.html"><span>OpenSearch\Endpoints\Indices\Upgrade</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Stats.html"><span>OpenSearch\Endpoints\Indices\Stats</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Freeze.html"><span>OpenSearch\Endpoints\Indices\Freeze</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Delete.html"><span>OpenSearch\Endpoints\Indices\Delete</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.SimulateIndexTemplate.html"><span>OpenSearch\Endpoints\Indices\SimulateIndexTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Create.html"><span>OpenSearch\Endpoints\Indices\Create</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.UpdateAliases.html"><span>OpenSearch\Endpoints\Indices\UpdateAliases</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Open.html"><span>OpenSearch\Endpoints\Indices\Open</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Unfreeze.html"><span>OpenSearch\Endpoints\Indices\Unfreeze</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.PutSettings.html"><span>OpenSearch\Endpoints\Indices\PutSettings</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Recovery.html"><span>OpenSearch\Endpoints\Indices\Recovery</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteTemplate.html"><span>OpenSearch\Endpoints\Indices\DeleteTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.GetDataStream.html"><span>OpenSearch\Endpoints\Indices\GetDataStream</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteAlias.html"><span>OpenSearch\Endpoints\Indices\DeleteAlias</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.GetSettings.html"><span>OpenSearch\Endpoints\Indices\GetSettings</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Split.html"><span>OpenSearch\Endpoints\Indices\Split</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Analyze.html"><span>OpenSearch\Endpoints\Indices\Analyze</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.AddBlock.html"><span>OpenSearch\Endpoints\Indices\AddBlock</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.GetTemplate.html"><span>OpenSearch\Endpoints\Indices\GetTemplate</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.Get.html"><span>OpenSearch\Endpoints\Indices\Get</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Indices.GetMapping.html"><span>OpenSearch\Endpoints\Indices\GetMapping</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Get.html"><span>OpenSearch\Endpoints\Get</span></a>
+
+
+	</li>
+	<li>
+<a href="OpenSearch.Endpoints.Reindex.html"><span>OpenSearch\Endpoints\Reindex</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#28" title="Go to source code">OpenSearch/Endpoints/AbstractEndpoint.php</a><br>
+		</div>
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="getParamWhitelist" id="_getParamWhitelist">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#65-68" title="Go to source code">getParamWhitelist</a>(): string[]</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="OpenSearch.Endpoints.Search.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Search::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Restore.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Snapshot\Restore::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Status.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Snapshot\Status::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.DeleteRepository.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Snapshot\DeleteRepository::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.GetRepository.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Snapshot\GetRepository::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Delete.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Snapshot\Delete::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Create.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Snapshot\Create::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.CreateRepository.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Snapshot\CreateRepository::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.CloneSnapshot.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Snapshot\CloneSnapshot::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.VerifyRepository.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Snapshot\VerifyRepository::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.CleanupRepository.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Snapshot\CleanupRepository::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Get.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Snapshot\Get::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.MsearchTemplate.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\MsearchTemplate::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.AsyncSearch.Delete.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\AsyncSearch\Delete::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.AsyncSearch.Submit.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\AsyncSearch\Submit::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.AsyncSearch.Get.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\AsyncSearch\Get::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Tasks.Cancel.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Tasks\Cancel::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Tasks.ListTasks.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Tasks\ListTasks::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Tasks.Get.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Tasks\Get::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Sql.CursorClose.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Sql\CursorClose::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Sql.Explain.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Sql\Explain::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Sql.Query.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Sql\Query::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ssl.Certificates.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Ssl\Certificates::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.ClearScroll.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\ClearScroll::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Nodes.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\Nodes::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Health.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\Health::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Snapshots.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\Snapshots::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Segments.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\Segments::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.PendingTasks.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\PendingTasks::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Transforms.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\Transforms::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Repositories.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\Repositories::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Count.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\Count::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Fielddata.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\Fielddata::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.NodeAttrs.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\NodeAttrs::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Indices.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\Indices::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.ClusterManager.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\ClusterManager::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.ThreadPool.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\ThreadPool::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Recovery.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\Recovery::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Aliases.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\Aliases::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Shards.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\Shards::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Help.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\Help::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Master.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\Master::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Allocation.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\Allocation::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Tasks.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\Tasks::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Plugins.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\Plugins::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Templates.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cat\Templates::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.TermVectors.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\TermVectors::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.ScriptsPainlessExecute.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\ScriptsPainlessExecute::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.RankEval.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\RankEval::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.RenderSearchTemplate.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\RenderSearchTemplate::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Scroll.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Scroll::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.UpdateByQuery.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\UpdateByQuery::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.FieldCaps.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\FieldCaps::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.GetSource.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\GetSource::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Bulk.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Bulk::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Mget.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Mget::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.DeletePipeline.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Ingest\DeletePipeline::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.Simulate.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Ingest\Simulate::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.ProcessorGrok.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Ingest\ProcessorGrok::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.PutPipeline.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Ingest\PutPipeline::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.GetPipeline.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Ingest\GetPipeline::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Nodes.ReloadSecureSettings.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Nodes\ReloadSecureSettings::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Nodes.Stats.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Nodes\Stats::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Nodes.HotThreads.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Nodes\HotThreads::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Nodes.Usage.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Nodes\Usage::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Nodes.Info.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Nodes\Info::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.GetScriptLanguages.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\GetScriptLanguages::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.GetScript.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\GetScript::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Monitoring.Bulk.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Monitoring\Bulk::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.GetScriptContext.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\GetScriptContext::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Exists.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Exists::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Index.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Index::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ping.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Ping::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.PatchRoleMappings.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\PatchRoleMappings::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetActionGroups.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\GetActionGroups::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetConfig.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\GetConfig::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.CreateTenant.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\CreateTenant::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetAccount.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\GetAccount::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.CreateActionGroup.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\CreateActionGroup::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.PatchUsers.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\PatchUsers::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.DeleteRoleMapping.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\DeleteRoleMapping::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetCertificates.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\GetCertificates::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.DeleteDistinguishedNames.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\DeleteDistinguishedNames::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.Health.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\Health::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetTenants.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\GetTenants::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.UpdateDistinguishedNames.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\UpdateDistinguishedNames::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.FlushCache.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\FlushCache::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.CreateRole.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\CreateRole::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.CreateUser.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\CreateUser::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.PatchTenants.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\PatchTenants::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetRoleMappings.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\GetRoleMappings::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.PatchRoles.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\PatchRoles::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.CreateRoleMapping.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\CreateRoleMapping::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.PatchActionGroups.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\PatchActionGroups::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.DeleteUser.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\DeleteUser::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.DeleteTenant.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\DeleteTenant::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetUsers.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\GetUsers::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetDistinguishedNames.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\GetDistinguishedNames::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.PatchConfig.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\PatchConfig::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.DeleteActionGroup.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\DeleteActionGroup::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetRoles.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\GetRoles::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.ChangePassword.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\ChangePassword::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.DeleteRole.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\DeleteRole::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.UpdateConfig.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Security\UpdateConfig::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.ExistsComponentTemplate.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cluster\ExistsComponentTemplate::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.PutComponentTemplate.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cluster\PutComponentTemplate::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.Reroute.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cluster\Reroute::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.DeleteVotingConfigExclusions.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cluster\DeleteVotingConfigExclusions::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.Health.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cluster\Health::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.PendingTasks.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cluster\PendingTasks::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.State.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cluster\State::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.AllocationExplain.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cluster\AllocationExplain::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.Stats.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cluster\Stats::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.RemoteInfo.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cluster\RemoteInfo::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.PostVotingConfigExclusions.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cluster\PostVotingConfigExclusions::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.GetComponentTemplate.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cluster\GetComponentTemplate::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.PutSettings.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cluster\PutSettings::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.DeleteComponentTemplate.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cluster\DeleteComponentTemplate::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.GetSettings.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Cluster\GetSettings::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.PutScript.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\PutScript::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Count.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Count::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DeleteByQueryRethrottle.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\DeleteByQueryRethrottle::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.DeleteTransform.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\DeleteTransform::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.PreviewTransform.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\PreviewTransform::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.PutTransform.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\PutTransform::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.UpdateTransform.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\UpdateTransform::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.GetTransformStats.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\GetTransformStats::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.StartTransform.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\StartTransform::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.GetTransform.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\GetTransform::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.StopTransform.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\StopTransform::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.ExistsSource.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\ExistsSource::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DanglingIndices.DeleteDanglingIndex.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\DanglingIndices\DeleteDanglingIndex::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DanglingIndices.ListDanglingIndices.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\DanglingIndices\ListDanglingIndices::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DanglingIndices.ImportDanglingIndex.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\DanglingIndices\ImportDanglingIndex::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Explain.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Explain::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.OpenPointInTime.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\OpenPointInTime::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DeleteScript.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\DeleteScript::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.UpdateByQueryRethrottle.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\UpdateByQueryRethrottle::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchShards.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\SearchShards::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Update.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Update::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Delete.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Delete::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DeleteByQuery.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\DeleteByQuery::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Create.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Create::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.Mount.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\SearchableSnapshots\Mount::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.RepositoryStats.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\SearchableSnapshots\RepositoryStats::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.ClearCache.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\SearchableSnapshots\ClearCache::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.Stats.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\SearchableSnapshots\Stats::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.ClosePointInTime.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\ClosePointInTime::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.MTermVectors.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\MTermVectors::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Info.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Info::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.ReindexRethrottle.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\ReindexRethrottle::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchTemplate.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\SearchTemplate::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Msearch.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Msearch::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.CreateDataStream.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\CreateDataStream::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ExistsIndexTemplate.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\ExistsIndexTemplate::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.CloneIndices.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\CloneIndices::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetAlias.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\GetAlias::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.DataStreamsStats.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\DataStreamsStats::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetIndexTemplate.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\GetIndexTemplate::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Flush.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\Flush::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ShardStores.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\ShardStores::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutIndexTemplate.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\PutIndexTemplate::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutTemplate.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\PutTemplate::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Refresh.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\Refresh::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutAlias.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\PutAlias::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ExistsTemplate.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\ExistsTemplate::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ReloadSearchAnalyzers.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\ReloadSearchAnalyzers::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Shrink.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\Shrink::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Close.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\Close::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.SimulateTemplate.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\SimulateTemplate::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ForceMerge.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\ForceMerge::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ClearCache.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\ClearCache::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetFieldMapping.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\GetFieldMapping::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Segments.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\Segments::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Exists.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\Exists::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutMapping.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\PutMapping::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetUpgrade.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\GetUpgrade::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteDataStream.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\DeleteDataStream::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ValidateQuery.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\ValidateQuery::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteIndexTemplate.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\DeleteIndexTemplate::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Rollover.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\Rollover::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ResolveIndex.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\ResolveIndex::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ExistsAlias.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\ExistsAlias::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Upgrade.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\Upgrade::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Stats.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\Stats::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Freeze.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\Freeze::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Delete.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\Delete::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.SimulateIndexTemplate.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\SimulateIndexTemplate::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Create.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\Create::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.UpdateAliases.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\UpdateAliases::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Open.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\Open::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Unfreeze.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\Unfreeze::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutSettings.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\PutSettings::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Recovery.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\Recovery::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteTemplate.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\DeleteTemplate::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetDataStream.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\GetDataStream::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteAlias.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\DeleteAlias::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetSettings.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\GetSettings::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Split.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\Split::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Analyze.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\Analyze::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.AddBlock.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\AddBlock::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetTemplate.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\GetTemplate::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Get.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\Get::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetMapping.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Indices\GetMapping::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Get.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Get::getParamWhitelist()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Reindex.html#_getParamWhitelist">						<code>OpenSearch\Endpoints\Reindex::getParamWhitelist()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getParamWhitelist">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getURI" id="_getURI">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#70-73" title="Go to source code">getURI</a>(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="OpenSearch.Endpoints.Search.html#_getURI">						<code>OpenSearch\Endpoints\Search::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Restore.html#_getURI">						<code>OpenSearch\Endpoints\Snapshot\Restore::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Status.html#_getURI">						<code>OpenSearch\Endpoints\Snapshot\Status::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.DeleteRepository.html#_getURI">						<code>OpenSearch\Endpoints\Snapshot\DeleteRepository::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.GetRepository.html#_getURI">						<code>OpenSearch\Endpoints\Snapshot\GetRepository::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Delete.html#_getURI">						<code>OpenSearch\Endpoints\Snapshot\Delete::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Create.html#_getURI">						<code>OpenSearch\Endpoints\Snapshot\Create::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.CreateRepository.html#_getURI">						<code>OpenSearch\Endpoints\Snapshot\CreateRepository::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.CloneSnapshot.html#_getURI">						<code>OpenSearch\Endpoints\Snapshot\CloneSnapshot::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.VerifyRepository.html#_getURI">						<code>OpenSearch\Endpoints\Snapshot\VerifyRepository::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.CleanupRepository.html#_getURI">						<code>OpenSearch\Endpoints\Snapshot\CleanupRepository::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Get.html#_getURI">						<code>OpenSearch\Endpoints\Snapshot\Get::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.MsearchTemplate.html#_getURI">						<code>OpenSearch\Endpoints\MsearchTemplate::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.AsyncSearch.Delete.html#_getURI">						<code>OpenSearch\Endpoints\AsyncSearch\Delete::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.AsyncSearch.Submit.html#_getURI">						<code>OpenSearch\Endpoints\AsyncSearch\Submit::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.AsyncSearch.Get.html#_getURI">						<code>OpenSearch\Endpoints\AsyncSearch\Get::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Tasks.Cancel.html#_getURI">						<code>OpenSearch\Endpoints\Tasks\Cancel::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Tasks.ListTasks.html#_getURI">						<code>OpenSearch\Endpoints\Tasks\ListTasks::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Tasks.Get.html#_getURI">						<code>OpenSearch\Endpoints\Tasks\Get::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Sql.CursorClose.html#_getURI">						<code>OpenSearch\Endpoints\Sql\CursorClose::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Sql.Explain.html#_getURI">						<code>OpenSearch\Endpoints\Sql\Explain::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Sql.Query.html#_getURI">						<code>OpenSearch\Endpoints\Sql\Query::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ssl.Certificates.html#_getURI">						<code>OpenSearch\Endpoints\Ssl\Certificates::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.ClearScroll.html#_getURI">						<code>OpenSearch\Endpoints\ClearScroll::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Nodes.html#_getURI">						<code>OpenSearch\Endpoints\Cat\Nodes::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Health.html#_getURI">						<code>OpenSearch\Endpoints\Cat\Health::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Snapshots.html#_getURI">						<code>OpenSearch\Endpoints\Cat\Snapshots::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Segments.html#_getURI">						<code>OpenSearch\Endpoints\Cat\Segments::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.PendingTasks.html#_getURI">						<code>OpenSearch\Endpoints\Cat\PendingTasks::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Transforms.html#_getURI">						<code>OpenSearch\Endpoints\Cat\Transforms::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Repositories.html#_getURI">						<code>OpenSearch\Endpoints\Cat\Repositories::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Count.html#_getURI">						<code>OpenSearch\Endpoints\Cat\Count::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Fielddata.html#_getURI">						<code>OpenSearch\Endpoints\Cat\Fielddata::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.NodeAttrs.html#_getURI">						<code>OpenSearch\Endpoints\Cat\NodeAttrs::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Indices.html#_getURI">						<code>OpenSearch\Endpoints\Cat\Indices::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.ClusterManager.html#_getURI">						<code>OpenSearch\Endpoints\Cat\ClusterManager::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.ThreadPool.html#_getURI">						<code>OpenSearch\Endpoints\Cat\ThreadPool::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Recovery.html#_getURI">						<code>OpenSearch\Endpoints\Cat\Recovery::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Aliases.html#_getURI">						<code>OpenSearch\Endpoints\Cat\Aliases::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Shards.html#_getURI">						<code>OpenSearch\Endpoints\Cat\Shards::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Help.html#_getURI">						<code>OpenSearch\Endpoints\Cat\Help::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Master.html#_getURI">						<code>OpenSearch\Endpoints\Cat\Master::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Allocation.html#_getURI">						<code>OpenSearch\Endpoints\Cat\Allocation::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Tasks.html#_getURI">						<code>OpenSearch\Endpoints\Cat\Tasks::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Plugins.html#_getURI">						<code>OpenSearch\Endpoints\Cat\Plugins::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Templates.html#_getURI">						<code>OpenSearch\Endpoints\Cat\Templates::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.TermVectors.html#_getURI">						<code>OpenSearch\Endpoints\TermVectors::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.ScriptsPainlessExecute.html#_getURI">						<code>OpenSearch\Endpoints\ScriptsPainlessExecute::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.RankEval.html#_getURI">						<code>OpenSearch\Endpoints\RankEval::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.RenderSearchTemplate.html#_getURI">						<code>OpenSearch\Endpoints\RenderSearchTemplate::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Scroll.html#_getURI">						<code>OpenSearch\Endpoints\Scroll::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.UpdateByQuery.html#_getURI">						<code>OpenSearch\Endpoints\UpdateByQuery::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.FieldCaps.html#_getURI">						<code>OpenSearch\Endpoints\FieldCaps::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.GetSource.html#_getURI">						<code>OpenSearch\Endpoints\GetSource::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Bulk.html#_getURI">						<code>OpenSearch\Endpoints\Bulk::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Mget.html#_getURI">						<code>OpenSearch\Endpoints\Mget::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.DeletePipeline.html#_getURI">						<code>OpenSearch\Endpoints\Ingest\DeletePipeline::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.Simulate.html#_getURI">						<code>OpenSearch\Endpoints\Ingest\Simulate::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.ProcessorGrok.html#_getURI">						<code>OpenSearch\Endpoints\Ingest\ProcessorGrok::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.PutPipeline.html#_getURI">						<code>OpenSearch\Endpoints\Ingest\PutPipeline::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.GetPipeline.html#_getURI">						<code>OpenSearch\Endpoints\Ingest\GetPipeline::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Nodes.ReloadSecureSettings.html#_getURI">						<code>OpenSearch\Endpoints\Nodes\ReloadSecureSettings::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Nodes.Stats.html#_getURI">						<code>OpenSearch\Endpoints\Nodes\Stats::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Nodes.HotThreads.html#_getURI">						<code>OpenSearch\Endpoints\Nodes\HotThreads::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Nodes.Usage.html#_getURI">						<code>OpenSearch\Endpoints\Nodes\Usage::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Nodes.Info.html#_getURI">						<code>OpenSearch\Endpoints\Nodes\Info::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.GetScriptLanguages.html#_getURI">						<code>OpenSearch\Endpoints\GetScriptLanguages::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.GetScript.html#_getURI">						<code>OpenSearch\Endpoints\GetScript::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Monitoring.Bulk.html#_getURI">						<code>OpenSearch\Endpoints\Monitoring\Bulk::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.GetScriptContext.html#_getURI">						<code>OpenSearch\Endpoints\GetScriptContext::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Exists.html#_getURI">						<code>OpenSearch\Endpoints\Exists::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Index.html#_getURI">						<code>OpenSearch\Endpoints\Index::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ping.html#_getURI">						<code>OpenSearch\Endpoints\Ping::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.PatchRoleMappings.html#_getURI">						<code>OpenSearch\Endpoints\Security\PatchRoleMappings::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetActionGroups.html#_getURI">						<code>OpenSearch\Endpoints\Security\GetActionGroups::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetConfig.html#_getURI">						<code>OpenSearch\Endpoints\Security\GetConfig::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.CreateTenant.html#_getURI">						<code>OpenSearch\Endpoints\Security\CreateTenant::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetAccount.html#_getURI">						<code>OpenSearch\Endpoints\Security\GetAccount::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.CreateActionGroup.html#_getURI">						<code>OpenSearch\Endpoints\Security\CreateActionGroup::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.PatchUsers.html#_getURI">						<code>OpenSearch\Endpoints\Security\PatchUsers::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.DeleteRoleMapping.html#_getURI">						<code>OpenSearch\Endpoints\Security\DeleteRoleMapping::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetCertificates.html#_getURI">						<code>OpenSearch\Endpoints\Security\GetCertificates::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.DeleteDistinguishedNames.html#_getURI">						<code>OpenSearch\Endpoints\Security\DeleteDistinguishedNames::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.Health.html#_getURI">						<code>OpenSearch\Endpoints\Security\Health::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetTenants.html#_getURI">						<code>OpenSearch\Endpoints\Security\GetTenants::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.UpdateDistinguishedNames.html#_getURI">						<code>OpenSearch\Endpoints\Security\UpdateDistinguishedNames::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.FlushCache.html#_getURI">						<code>OpenSearch\Endpoints\Security\FlushCache::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.CreateRole.html#_getURI">						<code>OpenSearch\Endpoints\Security\CreateRole::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.CreateUser.html#_getURI">						<code>OpenSearch\Endpoints\Security\CreateUser::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.PatchTenants.html#_getURI">						<code>OpenSearch\Endpoints\Security\PatchTenants::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetRoleMappings.html#_getURI">						<code>OpenSearch\Endpoints\Security\GetRoleMappings::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.PatchRoles.html#_getURI">						<code>OpenSearch\Endpoints\Security\PatchRoles::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.CreateRoleMapping.html#_getURI">						<code>OpenSearch\Endpoints\Security\CreateRoleMapping::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.PatchActionGroups.html#_getURI">						<code>OpenSearch\Endpoints\Security\PatchActionGroups::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.DeleteUser.html#_getURI">						<code>OpenSearch\Endpoints\Security\DeleteUser::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.DeleteTenant.html#_getURI">						<code>OpenSearch\Endpoints\Security\DeleteTenant::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetUsers.html#_getURI">						<code>OpenSearch\Endpoints\Security\GetUsers::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetDistinguishedNames.html#_getURI">						<code>OpenSearch\Endpoints\Security\GetDistinguishedNames::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.PatchConfig.html#_getURI">						<code>OpenSearch\Endpoints\Security\PatchConfig::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.DeleteActionGroup.html#_getURI">						<code>OpenSearch\Endpoints\Security\DeleteActionGroup::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetRoles.html#_getURI">						<code>OpenSearch\Endpoints\Security\GetRoles::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.ChangePassword.html#_getURI">						<code>OpenSearch\Endpoints\Security\ChangePassword::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.DeleteRole.html#_getURI">						<code>OpenSearch\Endpoints\Security\DeleteRole::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.UpdateConfig.html#_getURI">						<code>OpenSearch\Endpoints\Security\UpdateConfig::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.ExistsComponentTemplate.html#_getURI">						<code>OpenSearch\Endpoints\Cluster\ExistsComponentTemplate::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.PutComponentTemplate.html#_getURI">						<code>OpenSearch\Endpoints\Cluster\PutComponentTemplate::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.Reroute.html#_getURI">						<code>OpenSearch\Endpoints\Cluster\Reroute::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.DeleteVotingConfigExclusions.html#_getURI">						<code>OpenSearch\Endpoints\Cluster\DeleteVotingConfigExclusions::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.Health.html#_getURI">						<code>OpenSearch\Endpoints\Cluster\Health::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.PendingTasks.html#_getURI">						<code>OpenSearch\Endpoints\Cluster\PendingTasks::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.State.html#_getURI">						<code>OpenSearch\Endpoints\Cluster\State::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.AllocationExplain.html#_getURI">						<code>OpenSearch\Endpoints\Cluster\AllocationExplain::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.Stats.html#_getURI">						<code>OpenSearch\Endpoints\Cluster\Stats::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.RemoteInfo.html#_getURI">						<code>OpenSearch\Endpoints\Cluster\RemoteInfo::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.PostVotingConfigExclusions.html#_getURI">						<code>OpenSearch\Endpoints\Cluster\PostVotingConfigExclusions::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.GetComponentTemplate.html#_getURI">						<code>OpenSearch\Endpoints\Cluster\GetComponentTemplate::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.PutSettings.html#_getURI">						<code>OpenSearch\Endpoints\Cluster\PutSettings::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.DeleteComponentTemplate.html#_getURI">						<code>OpenSearch\Endpoints\Cluster\DeleteComponentTemplate::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.GetSettings.html#_getURI">						<code>OpenSearch\Endpoints\Cluster\GetSettings::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.PutScript.html#_getURI">						<code>OpenSearch\Endpoints\PutScript::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Count.html#_getURI">						<code>OpenSearch\Endpoints\Count::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DeleteByQueryRethrottle.html#_getURI">						<code>OpenSearch\Endpoints\DeleteByQueryRethrottle::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.DeleteTransform.html#_getURI">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\DeleteTransform::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.PreviewTransform.html#_getURI">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\PreviewTransform::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.PutTransform.html#_getURI">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\PutTransform::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.UpdateTransform.html#_getURI">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\UpdateTransform::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.GetTransformStats.html#_getURI">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\GetTransformStats::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.StartTransform.html#_getURI">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\StartTransform::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.GetTransform.html#_getURI">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\GetTransform::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.StopTransform.html#_getURI">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\StopTransform::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.ExistsSource.html#_getURI">						<code>OpenSearch\Endpoints\ExistsSource::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DanglingIndices.DeleteDanglingIndex.html#_getURI">						<code>OpenSearch\Endpoints\DanglingIndices\DeleteDanglingIndex::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DanglingIndices.ListDanglingIndices.html#_getURI">						<code>OpenSearch\Endpoints\DanglingIndices\ListDanglingIndices::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DanglingIndices.ImportDanglingIndex.html#_getURI">						<code>OpenSearch\Endpoints\DanglingIndices\ImportDanglingIndex::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Explain.html#_getURI">						<code>OpenSearch\Endpoints\Explain::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.OpenPointInTime.html#_getURI">						<code>OpenSearch\Endpoints\OpenPointInTime::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DeleteScript.html#_getURI">						<code>OpenSearch\Endpoints\DeleteScript::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.UpdateByQueryRethrottle.html#_getURI">						<code>OpenSearch\Endpoints\UpdateByQueryRethrottle::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchShards.html#_getURI">						<code>OpenSearch\Endpoints\SearchShards::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Update.html#_getURI">						<code>OpenSearch\Endpoints\Update::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Delete.html#_getURI">						<code>OpenSearch\Endpoints\Delete::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DeleteByQuery.html#_getURI">						<code>OpenSearch\Endpoints\DeleteByQuery::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Create.html#_getURI">						<code>OpenSearch\Endpoints\Create::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.Mount.html#_getURI">						<code>OpenSearch\Endpoints\SearchableSnapshots\Mount::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.RepositoryStats.html#_getURI">						<code>OpenSearch\Endpoints\SearchableSnapshots\RepositoryStats::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.ClearCache.html#_getURI">						<code>OpenSearch\Endpoints\SearchableSnapshots\ClearCache::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.Stats.html#_getURI">						<code>OpenSearch\Endpoints\SearchableSnapshots\Stats::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.ClosePointInTime.html#_getURI">						<code>OpenSearch\Endpoints\ClosePointInTime::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.MTermVectors.html#_getURI">						<code>OpenSearch\Endpoints\MTermVectors::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Info.html#_getURI">						<code>OpenSearch\Endpoints\Info::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.ReindexRethrottle.html#_getURI">						<code>OpenSearch\Endpoints\ReindexRethrottle::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchTemplate.html#_getURI">						<code>OpenSearch\Endpoints\SearchTemplate::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Msearch.html#_getURI">						<code>OpenSearch\Endpoints\Msearch::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.CreateDataStream.html#_getURI">						<code>OpenSearch\Endpoints\Indices\CreateDataStream::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ExistsIndexTemplate.html#_getURI">						<code>OpenSearch\Endpoints\Indices\ExistsIndexTemplate::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.CloneIndices.html#_getURI">						<code>OpenSearch\Endpoints\Indices\CloneIndices::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetAlias.html#_getURI">						<code>OpenSearch\Endpoints\Indices\GetAlias::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.DataStreamsStats.html#_getURI">						<code>OpenSearch\Endpoints\Indices\DataStreamsStats::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetIndexTemplate.html#_getURI">						<code>OpenSearch\Endpoints\Indices\GetIndexTemplate::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Flush.html#_getURI">						<code>OpenSearch\Endpoints\Indices\Flush::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ShardStores.html#_getURI">						<code>OpenSearch\Endpoints\Indices\ShardStores::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutIndexTemplate.html#_getURI">						<code>OpenSearch\Endpoints\Indices\PutIndexTemplate::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutTemplate.html#_getURI">						<code>OpenSearch\Endpoints\Indices\PutTemplate::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Refresh.html#_getURI">						<code>OpenSearch\Endpoints\Indices\Refresh::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutAlias.html#_getURI">						<code>OpenSearch\Endpoints\Indices\PutAlias::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ExistsTemplate.html#_getURI">						<code>OpenSearch\Endpoints\Indices\ExistsTemplate::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ReloadSearchAnalyzers.html#_getURI">						<code>OpenSearch\Endpoints\Indices\ReloadSearchAnalyzers::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Shrink.html#_getURI">						<code>OpenSearch\Endpoints\Indices\Shrink::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Close.html#_getURI">						<code>OpenSearch\Endpoints\Indices\Close::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.SimulateTemplate.html#_getURI">						<code>OpenSearch\Endpoints\Indices\SimulateTemplate::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ForceMerge.html#_getURI">						<code>OpenSearch\Endpoints\Indices\ForceMerge::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ClearCache.html#_getURI">						<code>OpenSearch\Endpoints\Indices\ClearCache::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetFieldMapping.html#_getURI">						<code>OpenSearch\Endpoints\Indices\GetFieldMapping::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Segments.html#_getURI">						<code>OpenSearch\Endpoints\Indices\Segments::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Exists.html#_getURI">						<code>OpenSearch\Endpoints\Indices\Exists::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutMapping.html#_getURI">						<code>OpenSearch\Endpoints\Indices\PutMapping::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetUpgrade.html#_getURI">						<code>OpenSearch\Endpoints\Indices\GetUpgrade::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteDataStream.html#_getURI">						<code>OpenSearch\Endpoints\Indices\DeleteDataStream::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ValidateQuery.html#_getURI">						<code>OpenSearch\Endpoints\Indices\ValidateQuery::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteIndexTemplate.html#_getURI">						<code>OpenSearch\Endpoints\Indices\DeleteIndexTemplate::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Rollover.html#_getURI">						<code>OpenSearch\Endpoints\Indices\Rollover::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ResolveIndex.html#_getURI">						<code>OpenSearch\Endpoints\Indices\ResolveIndex::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ExistsAlias.html#_getURI">						<code>OpenSearch\Endpoints\Indices\ExistsAlias::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Upgrade.html#_getURI">						<code>OpenSearch\Endpoints\Indices\Upgrade::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Stats.html#_getURI">						<code>OpenSearch\Endpoints\Indices\Stats::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Freeze.html#_getURI">						<code>OpenSearch\Endpoints\Indices\Freeze::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Delete.html#_getURI">						<code>OpenSearch\Endpoints\Indices\Delete::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.SimulateIndexTemplate.html#_getURI">						<code>OpenSearch\Endpoints\Indices\SimulateIndexTemplate::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Create.html#_getURI">						<code>OpenSearch\Endpoints\Indices\Create::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.UpdateAliases.html#_getURI">						<code>OpenSearch\Endpoints\Indices\UpdateAliases::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Open.html#_getURI">						<code>OpenSearch\Endpoints\Indices\Open::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Unfreeze.html#_getURI">						<code>OpenSearch\Endpoints\Indices\Unfreeze::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutSettings.html#_getURI">						<code>OpenSearch\Endpoints\Indices\PutSettings::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Recovery.html#_getURI">						<code>OpenSearch\Endpoints\Indices\Recovery::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteTemplate.html#_getURI">						<code>OpenSearch\Endpoints\Indices\DeleteTemplate::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetDataStream.html#_getURI">						<code>OpenSearch\Endpoints\Indices\GetDataStream::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteAlias.html#_getURI">						<code>OpenSearch\Endpoints\Indices\DeleteAlias::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetSettings.html#_getURI">						<code>OpenSearch\Endpoints\Indices\GetSettings::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Split.html#_getURI">						<code>OpenSearch\Endpoints\Indices\Split::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Analyze.html#_getURI">						<code>OpenSearch\Endpoints\Indices\Analyze::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.AddBlock.html#_getURI">						<code>OpenSearch\Endpoints\Indices\AddBlock::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetTemplate.html#_getURI">						<code>OpenSearch\Endpoints\Indices\GetTemplate::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Get.html#_getURI">						<code>OpenSearch\Endpoints\Indices\Get::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetMapping.html#_getURI">						<code>OpenSearch\Endpoints\Indices\GetMapping::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Get.html#_getURI">						<code>OpenSearch\Endpoints\Get::getURI()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Reindex.html#_getURI">						<code>OpenSearch\Endpoints\Reindex::getURI()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getURI">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMethod" id="_getMethod">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#75-78" title="Go to source code">getMethod</a>(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="OpenSearch.Endpoints.Search.html#_getMethod">						<code>OpenSearch\Endpoints\Search::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Restore.html#_getMethod">						<code>OpenSearch\Endpoints\Snapshot\Restore::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Status.html#_getMethod">						<code>OpenSearch\Endpoints\Snapshot\Status::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.DeleteRepository.html#_getMethod">						<code>OpenSearch\Endpoints\Snapshot\DeleteRepository::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.GetRepository.html#_getMethod">						<code>OpenSearch\Endpoints\Snapshot\GetRepository::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Delete.html#_getMethod">						<code>OpenSearch\Endpoints\Snapshot\Delete::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Create.html#_getMethod">						<code>OpenSearch\Endpoints\Snapshot\Create::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.CreateRepository.html#_getMethod">						<code>OpenSearch\Endpoints\Snapshot\CreateRepository::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.CloneSnapshot.html#_getMethod">						<code>OpenSearch\Endpoints\Snapshot\CloneSnapshot::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.VerifyRepository.html#_getMethod">						<code>OpenSearch\Endpoints\Snapshot\VerifyRepository::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.CleanupRepository.html#_getMethod">						<code>OpenSearch\Endpoints\Snapshot\CleanupRepository::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Get.html#_getMethod">						<code>OpenSearch\Endpoints\Snapshot\Get::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.MsearchTemplate.html#_getMethod">						<code>OpenSearch\Endpoints\MsearchTemplate::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.AsyncSearch.Delete.html#_getMethod">						<code>OpenSearch\Endpoints\AsyncSearch\Delete::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.AsyncSearch.Submit.html#_getMethod">						<code>OpenSearch\Endpoints\AsyncSearch\Submit::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.AsyncSearch.Get.html#_getMethod">						<code>OpenSearch\Endpoints\AsyncSearch\Get::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Tasks.Cancel.html#_getMethod">						<code>OpenSearch\Endpoints\Tasks\Cancel::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Tasks.ListTasks.html#_getMethod">						<code>OpenSearch\Endpoints\Tasks\ListTasks::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Tasks.Get.html#_getMethod">						<code>OpenSearch\Endpoints\Tasks\Get::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Sql.CursorClose.html#_getMethod">						<code>OpenSearch\Endpoints\Sql\CursorClose::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Sql.Explain.html#_getMethod">						<code>OpenSearch\Endpoints\Sql\Explain::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Sql.Query.html#_getMethod">						<code>OpenSearch\Endpoints\Sql\Query::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ssl.Certificates.html#_getMethod">						<code>OpenSearch\Endpoints\Ssl\Certificates::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.ClearScroll.html#_getMethod">						<code>OpenSearch\Endpoints\ClearScroll::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Nodes.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\Nodes::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Health.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\Health::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Snapshots.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\Snapshots::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Segments.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\Segments::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.PendingTasks.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\PendingTasks::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Transforms.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\Transforms::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Repositories.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\Repositories::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Count.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\Count::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Fielddata.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\Fielddata::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.NodeAttrs.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\NodeAttrs::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Indices.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\Indices::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.ClusterManager.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\ClusterManager::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.ThreadPool.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\ThreadPool::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Recovery.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\Recovery::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Aliases.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\Aliases::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Shards.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\Shards::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Help.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\Help::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Master.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\Master::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Allocation.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\Allocation::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Tasks.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\Tasks::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Plugins.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\Plugins::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Templates.html#_getMethod">						<code>OpenSearch\Endpoints\Cat\Templates::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.TermVectors.html#_getMethod">						<code>OpenSearch\Endpoints\TermVectors::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.ScriptsPainlessExecute.html#_getMethod">						<code>OpenSearch\Endpoints\ScriptsPainlessExecute::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.RankEval.html#_getMethod">						<code>OpenSearch\Endpoints\RankEval::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.RenderSearchTemplate.html#_getMethod">						<code>OpenSearch\Endpoints\RenderSearchTemplate::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Scroll.html#_getMethod">						<code>OpenSearch\Endpoints\Scroll::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.UpdateByQuery.html#_getMethod">						<code>OpenSearch\Endpoints\UpdateByQuery::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.FieldCaps.html#_getMethod">						<code>OpenSearch\Endpoints\FieldCaps::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.GetSource.html#_getMethod">						<code>OpenSearch\Endpoints\GetSource::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Bulk.html#_getMethod">						<code>OpenSearch\Endpoints\Bulk::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Mget.html#_getMethod">						<code>OpenSearch\Endpoints\Mget::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.DeletePipeline.html#_getMethod">						<code>OpenSearch\Endpoints\Ingest\DeletePipeline::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.Simulate.html#_getMethod">						<code>OpenSearch\Endpoints\Ingest\Simulate::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.ProcessorGrok.html#_getMethod">						<code>OpenSearch\Endpoints\Ingest\ProcessorGrok::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.PutPipeline.html#_getMethod">						<code>OpenSearch\Endpoints\Ingest\PutPipeline::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.GetPipeline.html#_getMethod">						<code>OpenSearch\Endpoints\Ingest\GetPipeline::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Nodes.ReloadSecureSettings.html#_getMethod">						<code>OpenSearch\Endpoints\Nodes\ReloadSecureSettings::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Nodes.Stats.html#_getMethod">						<code>OpenSearch\Endpoints\Nodes\Stats::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Nodes.HotThreads.html#_getMethod">						<code>OpenSearch\Endpoints\Nodes\HotThreads::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Nodes.Usage.html#_getMethod">						<code>OpenSearch\Endpoints\Nodes\Usage::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Nodes.Info.html#_getMethod">						<code>OpenSearch\Endpoints\Nodes\Info::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.GetScriptLanguages.html#_getMethod">						<code>OpenSearch\Endpoints\GetScriptLanguages::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.GetScript.html#_getMethod">						<code>OpenSearch\Endpoints\GetScript::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Monitoring.Bulk.html#_getMethod">						<code>OpenSearch\Endpoints\Monitoring\Bulk::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.GetScriptContext.html#_getMethod">						<code>OpenSearch\Endpoints\GetScriptContext::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Exists.html#_getMethod">						<code>OpenSearch\Endpoints\Exists::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Index.html#_getMethod">						<code>OpenSearch\Endpoints\Index::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ping.html#_getMethod">						<code>OpenSearch\Endpoints\Ping::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.PatchRoleMappings.html#_getMethod">						<code>OpenSearch\Endpoints\Security\PatchRoleMappings::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetActionGroups.html#_getMethod">						<code>OpenSearch\Endpoints\Security\GetActionGroups::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetConfig.html#_getMethod">						<code>OpenSearch\Endpoints\Security\GetConfig::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.CreateTenant.html#_getMethod">						<code>OpenSearch\Endpoints\Security\CreateTenant::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetAccount.html#_getMethod">						<code>OpenSearch\Endpoints\Security\GetAccount::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.CreateActionGroup.html#_getMethod">						<code>OpenSearch\Endpoints\Security\CreateActionGroup::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.PatchUsers.html#_getMethod">						<code>OpenSearch\Endpoints\Security\PatchUsers::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.DeleteRoleMapping.html#_getMethod">						<code>OpenSearch\Endpoints\Security\DeleteRoleMapping::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetCertificates.html#_getMethod">						<code>OpenSearch\Endpoints\Security\GetCertificates::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.DeleteDistinguishedNames.html#_getMethod">						<code>OpenSearch\Endpoints\Security\DeleteDistinguishedNames::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.Health.html#_getMethod">						<code>OpenSearch\Endpoints\Security\Health::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetTenants.html#_getMethod">						<code>OpenSearch\Endpoints\Security\GetTenants::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.UpdateDistinguishedNames.html#_getMethod">						<code>OpenSearch\Endpoints\Security\UpdateDistinguishedNames::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.FlushCache.html#_getMethod">						<code>OpenSearch\Endpoints\Security\FlushCache::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.CreateRole.html#_getMethod">						<code>OpenSearch\Endpoints\Security\CreateRole::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.CreateUser.html#_getMethod">						<code>OpenSearch\Endpoints\Security\CreateUser::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.PatchTenants.html#_getMethod">						<code>OpenSearch\Endpoints\Security\PatchTenants::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetRoleMappings.html#_getMethod">						<code>OpenSearch\Endpoints\Security\GetRoleMappings::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.PatchRoles.html#_getMethod">						<code>OpenSearch\Endpoints\Security\PatchRoles::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.CreateRoleMapping.html#_getMethod">						<code>OpenSearch\Endpoints\Security\CreateRoleMapping::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.PatchActionGroups.html#_getMethod">						<code>OpenSearch\Endpoints\Security\PatchActionGroups::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.DeleteUser.html#_getMethod">						<code>OpenSearch\Endpoints\Security\DeleteUser::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.DeleteTenant.html#_getMethod">						<code>OpenSearch\Endpoints\Security\DeleteTenant::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetUsers.html#_getMethod">						<code>OpenSearch\Endpoints\Security\GetUsers::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetDistinguishedNames.html#_getMethod">						<code>OpenSearch\Endpoints\Security\GetDistinguishedNames::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.PatchConfig.html#_getMethod">						<code>OpenSearch\Endpoints\Security\PatchConfig::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.DeleteActionGroup.html#_getMethod">						<code>OpenSearch\Endpoints\Security\DeleteActionGroup::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.GetRoles.html#_getMethod">						<code>OpenSearch\Endpoints\Security\GetRoles::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.ChangePassword.html#_getMethod">						<code>OpenSearch\Endpoints\Security\ChangePassword::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.DeleteRole.html#_getMethod">						<code>OpenSearch\Endpoints\Security\DeleteRole::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Security.UpdateConfig.html#_getMethod">						<code>OpenSearch\Endpoints\Security\UpdateConfig::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.ExistsComponentTemplate.html#_getMethod">						<code>OpenSearch\Endpoints\Cluster\ExistsComponentTemplate::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.PutComponentTemplate.html#_getMethod">						<code>OpenSearch\Endpoints\Cluster\PutComponentTemplate::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.Reroute.html#_getMethod">						<code>OpenSearch\Endpoints\Cluster\Reroute::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.DeleteVotingConfigExclusions.html#_getMethod">						<code>OpenSearch\Endpoints\Cluster\DeleteVotingConfigExclusions::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.Health.html#_getMethod">						<code>OpenSearch\Endpoints\Cluster\Health::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.PendingTasks.html#_getMethod">						<code>OpenSearch\Endpoints\Cluster\PendingTasks::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.State.html#_getMethod">						<code>OpenSearch\Endpoints\Cluster\State::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.AllocationExplain.html#_getMethod">						<code>OpenSearch\Endpoints\Cluster\AllocationExplain::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.Stats.html#_getMethod">						<code>OpenSearch\Endpoints\Cluster\Stats::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.RemoteInfo.html#_getMethod">						<code>OpenSearch\Endpoints\Cluster\RemoteInfo::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.PostVotingConfigExclusions.html#_getMethod">						<code>OpenSearch\Endpoints\Cluster\PostVotingConfigExclusions::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.GetComponentTemplate.html#_getMethod">						<code>OpenSearch\Endpoints\Cluster\GetComponentTemplate::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.PutSettings.html#_getMethod">						<code>OpenSearch\Endpoints\Cluster\PutSettings::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.DeleteComponentTemplate.html#_getMethod">						<code>OpenSearch\Endpoints\Cluster\DeleteComponentTemplate::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.GetSettings.html#_getMethod">						<code>OpenSearch\Endpoints\Cluster\GetSettings::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.PutScript.html#_getMethod">						<code>OpenSearch\Endpoints\PutScript::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Count.html#_getMethod">						<code>OpenSearch\Endpoints\Count::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DeleteByQueryRethrottle.html#_getMethod">						<code>OpenSearch\Endpoints\DeleteByQueryRethrottle::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.DeleteTransform.html#_getMethod">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\DeleteTransform::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.PreviewTransform.html#_getMethod">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\PreviewTransform::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.PutTransform.html#_getMethod">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\PutTransform::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.UpdateTransform.html#_getMethod">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\UpdateTransform::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.GetTransformStats.html#_getMethod">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\GetTransformStats::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.StartTransform.html#_getMethod">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\StartTransform::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.GetTransform.html#_getMethod">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\GetTransform::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.StopTransform.html#_getMethod">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\StopTransform::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.ExistsSource.html#_getMethod">						<code>OpenSearch\Endpoints\ExistsSource::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DanglingIndices.DeleteDanglingIndex.html#_getMethod">						<code>OpenSearch\Endpoints\DanglingIndices\DeleteDanglingIndex::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DanglingIndices.ListDanglingIndices.html#_getMethod">						<code>OpenSearch\Endpoints\DanglingIndices\ListDanglingIndices::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DanglingIndices.ImportDanglingIndex.html#_getMethod">						<code>OpenSearch\Endpoints\DanglingIndices\ImportDanglingIndex::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Explain.html#_getMethod">						<code>OpenSearch\Endpoints\Explain::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.OpenPointInTime.html#_getMethod">						<code>OpenSearch\Endpoints\OpenPointInTime::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DeleteScript.html#_getMethod">						<code>OpenSearch\Endpoints\DeleteScript::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.UpdateByQueryRethrottle.html#_getMethod">						<code>OpenSearch\Endpoints\UpdateByQueryRethrottle::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchShards.html#_getMethod">						<code>OpenSearch\Endpoints\SearchShards::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Update.html#_getMethod">						<code>OpenSearch\Endpoints\Update::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Delete.html#_getMethod">						<code>OpenSearch\Endpoints\Delete::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DeleteByQuery.html#_getMethod">						<code>OpenSearch\Endpoints\DeleteByQuery::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Create.html#_getMethod">						<code>OpenSearch\Endpoints\Create::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.Mount.html#_getMethod">						<code>OpenSearch\Endpoints\SearchableSnapshots\Mount::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.RepositoryStats.html#_getMethod">						<code>OpenSearch\Endpoints\SearchableSnapshots\RepositoryStats::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.ClearCache.html#_getMethod">						<code>OpenSearch\Endpoints\SearchableSnapshots\ClearCache::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.Stats.html#_getMethod">						<code>OpenSearch\Endpoints\SearchableSnapshots\Stats::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.ClosePointInTime.html#_getMethod">						<code>OpenSearch\Endpoints\ClosePointInTime::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.MTermVectors.html#_getMethod">						<code>OpenSearch\Endpoints\MTermVectors::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Info.html#_getMethod">						<code>OpenSearch\Endpoints\Info::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.ReindexRethrottle.html#_getMethod">						<code>OpenSearch\Endpoints\ReindexRethrottle::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchTemplate.html#_getMethod">						<code>OpenSearch\Endpoints\SearchTemplate::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Msearch.html#_getMethod">						<code>OpenSearch\Endpoints\Msearch::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.CreateDataStream.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\CreateDataStream::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ExistsIndexTemplate.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\ExistsIndexTemplate::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.CloneIndices.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\CloneIndices::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetAlias.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\GetAlias::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.DataStreamsStats.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\DataStreamsStats::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetIndexTemplate.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\GetIndexTemplate::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Flush.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\Flush::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ShardStores.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\ShardStores::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutIndexTemplate.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\PutIndexTemplate::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutTemplate.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\PutTemplate::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Refresh.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\Refresh::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutAlias.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\PutAlias::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ExistsTemplate.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\ExistsTemplate::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ReloadSearchAnalyzers.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\ReloadSearchAnalyzers::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Shrink.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\Shrink::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Close.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\Close::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.SimulateTemplate.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\SimulateTemplate::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ForceMerge.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\ForceMerge::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ClearCache.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\ClearCache::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetFieldMapping.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\GetFieldMapping::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Segments.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\Segments::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Exists.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\Exists::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutMapping.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\PutMapping::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetUpgrade.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\GetUpgrade::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteDataStream.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\DeleteDataStream::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ValidateQuery.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\ValidateQuery::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteIndexTemplate.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\DeleteIndexTemplate::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Rollover.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\Rollover::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ResolveIndex.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\ResolveIndex::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ExistsAlias.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\ExistsAlias::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Upgrade.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\Upgrade::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Stats.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\Stats::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Freeze.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\Freeze::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Delete.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\Delete::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.SimulateIndexTemplate.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\SimulateIndexTemplate::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Create.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\Create::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.UpdateAliases.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\UpdateAliases::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Open.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\Open::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Unfreeze.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\Unfreeze::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutSettings.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\PutSettings::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Recovery.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\Recovery::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteTemplate.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\DeleteTemplate::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetDataStream.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\GetDataStream::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteAlias.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\DeleteAlias::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetSettings.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\GetSettings::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Split.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\Split::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Analyze.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\Analyze::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.AddBlock.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\AddBlock::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetTemplate.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\GetTemplate::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Get.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\Get::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetMapping.html#_getMethod">						<code>OpenSearch\Endpoints\Indices\GetMapping::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Get.html#_getMethod">						<code>OpenSearch\Endpoints\Get::getMethod()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Reindex.html#_getMethod">						<code>OpenSearch\Endpoints\Reindex::getMethod()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMethod">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setParams" id="_setParams">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#81-97" title="Go to source code">setParams</a>(<span>mixed[] <var>$params</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the parameters for this endpoint
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the parameters for this endpoint</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Array of parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setParams">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getParams" id="_getParams">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#99-102" title="Go to source code">getParams</a>(): array</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getParams">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOptions" id="_getOptions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#104-107" title="Go to source code">getOptions</a>(): array</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOptions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIndex" id="_getIndex">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#109-112" title="Go to source code">getIndex</a>(): ?string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIndex">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setIndex" id="_setIndex">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#114-132" title="Go to source code">setIndex</a>(<span><var>$index</var></span>): $this</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setIndex">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setId" id="_setId">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#134-152" title="Go to source code">setId</a>(<span>int|string|null <var>$docID</var></span>): $this</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setId">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getBody" id="_getBody">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#154-160" title="Go to source code">getBody</a>(): array|string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getBody">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setBody" id="_setBody">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#163-168" title="Go to source code">setBody</a>(<span>array <var>$body</var></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="OpenSearch.Endpoints.Search.html#_setBody">						<code>OpenSearch\Endpoints\Search::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Restore.html#_setBody">						<code>OpenSearch\Endpoints\Snapshot\Restore::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Create.html#_setBody">						<code>OpenSearch\Endpoints\Snapshot\Create::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.CreateRepository.html#_setBody">						<code>OpenSearch\Endpoints\Snapshot\CreateRepository::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.CloneSnapshot.html#_setBody">						<code>OpenSearch\Endpoints\Snapshot\CloneSnapshot::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.MsearchTemplate.html#_setBody">						<code>OpenSearch\Endpoints\MsearchTemplate::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.AsyncSearch.Submit.html#_setBody">						<code>OpenSearch\Endpoints\AsyncSearch\Submit::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.ClearScroll.html#_setBody">						<code>OpenSearch\Endpoints\ClearScroll::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.TermVectors.html#_setBody">						<code>OpenSearch\Endpoints\TermVectors::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.ScriptsPainlessExecute.html#_setBody">						<code>OpenSearch\Endpoints\ScriptsPainlessExecute::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.RankEval.html#_setBody">						<code>OpenSearch\Endpoints\RankEval::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.RenderSearchTemplate.html#_setBody">						<code>OpenSearch\Endpoints\RenderSearchTemplate::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Scroll.html#_setBody">						<code>OpenSearch\Endpoints\Scroll::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.UpdateByQuery.html#_setBody">						<code>OpenSearch\Endpoints\UpdateByQuery::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.FieldCaps.html#_setBody">						<code>OpenSearch\Endpoints\FieldCaps::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Bulk.html#_setBody">						<code>OpenSearch\Endpoints\Bulk::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Mget.html#_setBody">						<code>OpenSearch\Endpoints\Mget::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.Simulate.html#_setBody">						<code>OpenSearch\Endpoints\Ingest\Simulate::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.PutPipeline.html#_setBody">						<code>OpenSearch\Endpoints\Ingest\PutPipeline::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Nodes.ReloadSecureSettings.html#_setBody">						<code>OpenSearch\Endpoints\Nodes\ReloadSecureSettings::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Monitoring.Bulk.html#_setBody">						<code>OpenSearch\Endpoints\Monitoring\Bulk::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Index.html#_setBody">						<code>OpenSearch\Endpoints\Index::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.PutComponentTemplate.html#_setBody">						<code>OpenSearch\Endpoints\Cluster\PutComponentTemplate::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.Reroute.html#_setBody">						<code>OpenSearch\Endpoints\Cluster\Reroute::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.AllocationExplain.html#_setBody">						<code>OpenSearch\Endpoints\Cluster\AllocationExplain::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.PutSettings.html#_setBody">						<code>OpenSearch\Endpoints\Cluster\PutSettings::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.PutScript.html#_setBody">						<code>OpenSearch\Endpoints\PutScript::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Count.html#_setBody">						<code>OpenSearch\Endpoints\Count::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.PreviewTransform.html#_setBody">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\PreviewTransform::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.PutTransform.html#_setBody">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\PutTransform::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DataFrameTransformDeprecated.UpdateTransform.html#_setBody">						<code>OpenSearch\Endpoints\DataFrameTransformDeprecated\UpdateTransform::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Explain.html#_setBody">						<code>OpenSearch\Endpoints\Explain::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Update.html#_setBody">						<code>OpenSearch\Endpoints\Update::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DeleteByQuery.html#_setBody">						<code>OpenSearch\Endpoints\DeleteByQuery::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Create.html#_setBody">						<code>OpenSearch\Endpoints\Create::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.Mount.html#_setBody">						<code>OpenSearch\Endpoints\SearchableSnapshots\Mount::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.ClosePointInTime.html#_setBody">						<code>OpenSearch\Endpoints\ClosePointInTime::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.MTermVectors.html#_setBody">						<code>OpenSearch\Endpoints\MTermVectors::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchTemplate.html#_setBody">						<code>OpenSearch\Endpoints\SearchTemplate::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Msearch.html#_setBody">						<code>OpenSearch\Endpoints\Msearch::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.CloneIndices.html#_setBody">						<code>OpenSearch\Endpoints\Indices\CloneIndices::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutIndexTemplate.html#_setBody">						<code>OpenSearch\Endpoints\Indices\PutIndexTemplate::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutTemplate.html#_setBody">						<code>OpenSearch\Endpoints\Indices\PutTemplate::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutAlias.html#_setBody">						<code>OpenSearch\Endpoints\Indices\PutAlias::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Shrink.html#_setBody">						<code>OpenSearch\Endpoints\Indices\Shrink::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.SimulateTemplate.html#_setBody">						<code>OpenSearch\Endpoints\Indices\SimulateTemplate::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutMapping.html#_setBody">						<code>OpenSearch\Endpoints\Indices\PutMapping::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ValidateQuery.html#_setBody">						<code>OpenSearch\Endpoints\Indices\ValidateQuery::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Rollover.html#_setBody">						<code>OpenSearch\Endpoints\Indices\Rollover::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.SimulateIndexTemplate.html#_setBody">						<code>OpenSearch\Endpoints\Indices\SimulateIndexTemplate::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Create.html#_setBody">						<code>OpenSearch\Endpoints\Indices\Create::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.UpdateAliases.html#_setBody">						<code>OpenSearch\Endpoints\Indices\UpdateAliases::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutSettings.html#_setBody">						<code>OpenSearch\Endpoints\Indices\PutSettings::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Split.html#_setBody">						<code>OpenSearch\Endpoints\Indices\Split::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Analyze.html#_setBody">						<code>OpenSearch\Endpoints\Indices\Analyze::setBody()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Reindex.html#_setBody">						<code>OpenSearch\Endpoints\Reindex::setBody()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setBody">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOptionalURI" id="_getOptionalURI">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#170-178" title="Go to source code">getOptionalURI</a>(<span>string <var>$endpoint</var></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOptionalURI">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getParamDeprecation" id="_getParamDeprecation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#286-294" title="Go to source code">getParamDeprecation</a>(): array&lt;string, string|null&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		This function returns all param deprecations also optional with an replacement field
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>This function returns all param deprecations also optional with an replacement field</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Restore.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Snapshot\Restore::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Status.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Snapshot\Status::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.DeleteRepository.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Snapshot\DeleteRepository::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.GetRepository.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Snapshot\GetRepository::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Delete.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Snapshot\Delete::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Create.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Snapshot\Create::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.CreateRepository.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Snapshot\CreateRepository::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.CloneSnapshot.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Snapshot\CloneSnapshot::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.VerifyRepository.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Snapshot\VerifyRepository::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.CleanupRepository.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Snapshot\CleanupRepository::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Snapshot.Get.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Snapshot\Get::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Nodes.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cat\Nodes::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Snapshots.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cat\Snapshots::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.PendingTasks.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cat\PendingTasks::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Repositories.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cat\Repositories::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.NodeAttrs.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cat\NodeAttrs::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Indices.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cat\Indices::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.ThreadPool.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cat\ThreadPool::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Shards.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cat\Shards::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Master.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cat\Master::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Allocation.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cat\Allocation::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Plugins.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cat\Plugins::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cat.Templates.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cat\Templates::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.DeletePipeline.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Ingest\DeletePipeline::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.PutPipeline.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Ingest\PutPipeline::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Ingest.GetPipeline.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Ingest\GetPipeline::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.GetScript.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\GetScript::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.ExistsComponentTemplate.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cluster\ExistsComponentTemplate::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.PutComponentTemplate.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cluster\PutComponentTemplate::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.Reroute.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cluster\Reroute::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.Health.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cluster\Health::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.PendingTasks.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cluster\PendingTasks::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.State.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cluster\State::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.GetComponentTemplate.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cluster\GetComponentTemplate::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.PutSettings.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cluster\PutSettings::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.DeleteComponentTemplate.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cluster\DeleteComponentTemplate::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Cluster.GetSettings.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Cluster\GetSettings::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.PutScript.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\PutScript::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DanglingIndices.DeleteDanglingIndex.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\DanglingIndices\DeleteDanglingIndex::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DanglingIndices.ImportDanglingIndex.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\DanglingIndices\ImportDanglingIndex::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.DeleteScript.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\DeleteScript::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.SearchableSnapshots.Mount.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\SearchableSnapshots\Mount::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ExistsIndexTemplate.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\ExistsIndexTemplate::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.CloneIndices.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\CloneIndices::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetIndexTemplate.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\GetIndexTemplate::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutIndexTemplate.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\PutIndexTemplate::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutTemplate.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\PutTemplate::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutAlias.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\PutAlias::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.ExistsTemplate.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\ExistsTemplate::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Shrink.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\Shrink::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Close.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\Close::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.SimulateTemplate.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\SimulateTemplate::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutMapping.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\PutMapping::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteIndexTemplate.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\DeleteIndexTemplate::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Rollover.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\Rollover::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Freeze.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\Freeze::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Delete.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\Delete::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.SimulateIndexTemplate.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\SimulateIndexTemplate::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Create.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\Create::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.UpdateAliases.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\UpdateAliases::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Open.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\Open::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Unfreeze.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\Unfreeze::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.PutSettings.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\PutSettings::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteTemplate.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\DeleteTemplate::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.DeleteAlias.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\DeleteAlias::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetSettings.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\GetSettings::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Split.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\Split::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.AddBlock.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\AddBlock::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetTemplate.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\GetTemplate::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.Get.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\Get::getParamDeprecation()</code></a>				</li>
+				<li>
+<a href="OpenSearch.Endpoints.Indices.GetMapping.html#_getParamDeprecation">						<code>OpenSearch\Endpoints\Indices\GetMapping::getParamDeprecation()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getParamDeprecation">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="params" id="$params">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#30-33" title="Go to source code">$params</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$params">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="index" id="$index">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#35-38" title="Go to source code">$index</a></var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$index">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="id" id="$id">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string|int|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#40-43" title="Go to source code">$id</a></var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$id">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="method" id="$method">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#45-48" title="Go to source code">$method</a></var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$method">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="body" id="$body">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string|array|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#50-53" title="Go to source code">$body</a></var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$body">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="serializer" id="$serializer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="OpenSearch.Serializers.SerializerInterface.html"><span title="OpenSearch\Serializers\SerializerInterface">SerializerInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-OpenSearch.Endpoints.AbstractEndpoint.html#60-63" title="Go to source code">$serializer</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$serializer">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.3</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>
